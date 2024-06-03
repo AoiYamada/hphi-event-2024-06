@@ -7,9 +7,9 @@ const RecAsso = () => {
     // TODO: bear
     <section className="w-full py-4">
       <MaxWidthWrapper className="flex flex-col justify-between py-4 text-center">
-        <h2 className="text-3xl font-semibold pt-4">認可學會</h2>
-        <div className="text-sm pb-4">Recognized Association</div>
-        <div className="grid grid-cols-3 lg:grid-cols-6 justify-center flex-wrap gap-y-4 py-4">
+        <h2 className="pt-4 text-3xl font-semibold">認可學會</h2>
+        <div className="pb-4 text-sm">Recognized Association</div>
+        <div className="grid grid-cols-3 flex-wrap justify-center gap-y-4 py-4 lg:grid-cols-6">
           <Wrapper>
             <Image
               src="/assos/ngh asso.png"
@@ -33,8 +33,8 @@ export default RecAsso;
 
 const Wrapper: FC<PropsWithChildren> = ({ children }) => {
   return (
-    <div className="flex flex-row justify-center items-center">
-      <div className="w-[100px] h-[100px] rounded-full bg-green-500">
+    <div className="flex flex-row items-center justify-center">
+      <div className="h-[100px] w-[100px] rounded-full bg-green-500">
         {children}
       </div>
     </div>
