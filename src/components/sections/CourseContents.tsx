@@ -1,12 +1,12 @@
 import React from "react";
 import MaxWidthWrapper from "../MaxWidthWrapper";
 import Image from "next/image";
+import Link from "next/link";
 
-// TODO: bear
 const CourseContents = () => {
   return (
-    <section className="w-full py-4">
-      <MaxWidthWrapper className="flex flex-col items-center justify-center py-4 text-center">
+    <section className="w-full py-4" id="content">
+      <MaxWidthWrapper className="flex flex-col items-center justify-center py-4">
         <h2 className="text-2xl font-semibold">課程內容 Course Content</h2>
         <Image
           src="/hypnosis.png"
@@ -15,10 +15,12 @@ const CourseContents = () => {
           height={225}
         />
         <div>
-          <div className="flex flex-col items-start justify-start pt-8">
-            <h3 className="text-xl font-semibold">
-              第一部分： 催眠基礎及應用技巧 (配合美國NGH課程大綱)
-            </h3>
+          <details className="flex flex-col items-start justify-start pt-8">
+            <summary className="cursor-pointer text-xl font-semibold">
+              <h3 className="inline-block">
+                第一部分： 催眠基礎及應用技巧 (配合美國NGH課程大綱)
+              </h3>
+            </summary>
             <ul className="flex flex-col items-start pt-2">
               <li>- 催眠諮商原理及面談技巧</li>
               <li>- 催眠深度及如何設計建議</li>
@@ -44,28 +46,39 @@ const CourseContents = () => {
               <li>- 催眠面談技巧</li>
               <li>- 行為分析-目標設定-強化</li>
             </ul>
-          </div>
-          <div className="flex flex-col items-start justify-start pt-8">
-            <h3 className="text-xl font-semibold">第二部分： 進階應用技巧</h3>
+          </details>
+          <details className="flex flex-col items-start justify-start pt-8">
+            <summary className="cursor-pointer text-xl font-semibold">
+              <h3 className="inline-block">第二部分： 進階應用技巧</h3>
+            </summary>
             <ul className="flex flex-col items-start pt-2">
-              <li>- 現實中個案的面談及處理手法 "Case Summary" & "Case Plan"</li>
-              <li>- 時間線技巧應用 - "過去、現在、將來法" 的探討與演練</li>
               <li>
-                - 身心靈 (Mind-Body-Spirit) 整合催眠 - "自信壓力法" 的探討與演練
+                - 現實中個案的面談及處理手法 &quot;Case Summary&quot; &amp;
+                &quot;Case Plan&quot;
               </li>
-              <li>- 催眠中的解離應用 - "抽離法" & "飛鳥法" 的探討與演練</li>
+              <li>
+                - 時間線技巧應用 - &quot;過去、現在、將來法&quot; 的探討與演練
+              </li>
+              <li>
+                - 身心靈 (Mind-Body-Spirit) 整合催眠 - &quot;自信壓力法&quot;
+                的探討與演練
+              </li>
+              <li>
+                - 催眠中的解離應用 - &quot;抽離法&quot; &amp; &quot;飛鳥法&quot;
+                的探討與演練
+              </li>
               <li>- 認知行為治療 CBT 學派在催眠面談及過程中的應用</li>
               <li>
-                - "Focusing" (生命自覺) 與催眠 (參考 Prof. Leslie Greenberg,
-                Ph.D.)
+                - &quot;Focusing&quot; (生命自覺) 與催眠 (參考 Prof. Leslie
+                Greenberg, Ph.D.)
               </li>
               <li>
-                - "Mindfulness" (正念) 與催眠 (參考 Dr. Jon Kabat-Zinn, MIT,
-                U.S.A.)
+                - &quot;Mindfulness&quot; (正念) 與催眠 (參考 Dr. Jon
+                Kabat-Zinn, MIT, U.S.A.)
               </li>
               <li>- 主流冥想方法 (e.g. Dr. Herbert Benson) 與催眠</li>
             </ul>
-          </div>
+          </details>
         </div>
       </MaxWidthWrapper>
     </section>

@@ -4,7 +4,6 @@ import Image from "next/image";
 
 const RecAsso = () => {
   return (
-    // TODO: bear
     <section className="w-full py-4">
       <MaxWidthWrapper className="flex flex-col justify-between py-4 text-center">
         <h2 className="pt-4 text-2xl font-semibold">認可學會</h2>

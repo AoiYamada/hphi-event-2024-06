@@ -3,18 +3,16 @@
 import React from "react";
 import { Button } from "./ui/button";
 import { MoveRight } from "lucide-react";
+import Link from "next/link";
 
 const SignUp = () => {
   return (
-    <Button
-      className="flex flex-row justify-between gap-2"
-      style={{
-        backgroundColor: "#4CAF4F",
-      }}
-    >
-      <span>立即報名</span>
-      <MoveRight size={16} />
-    </Button>
+    <Link href="#contact-us">
+      <Button className="flex flex-row justify-between gap-2 bg-[#4CAF4F] text-xs font-normal">
+        <span>立即報名</span>
+        <MoveRight size={12} />
+      </Button>
+    </Link>
   );
 };
 
