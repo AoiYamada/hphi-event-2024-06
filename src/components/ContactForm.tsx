@@ -57,11 +57,11 @@ const ContactForm = () => {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      name: "Test Name",
-      email: "knowledgekong@gmail.com",
-      phone: "12345678",
-      subject: "some topic",
-      content: "test content",
+      name: "",
+      email: "",
+      phone: "",
+      subject: "",
+      content: "",
     },
   });
 
