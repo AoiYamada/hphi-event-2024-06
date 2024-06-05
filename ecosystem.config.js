@@ -4,7 +4,7 @@ module.exports = {
     {
       name: "hphi-web",
       script: "node_modules/next/dist/bin/next",
-      args: "start -p 4000 ./",
+      args: "start -p 4000",
       cwd: "/home/yamada/workspace/hphi/event-site-2024-06",
       exec_mode: "cluster",
       instances: 2,
