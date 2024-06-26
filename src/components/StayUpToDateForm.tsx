@@ -41,7 +41,7 @@ const StayUpToDateForm = () => {
 
       toast({
         title: "資料提交成功",
-        className: "bg-[#4CAF4F] text-white border-none",
+        className: "bg-primary text-white border-none",
       });
     } catch (error) {
       toast({

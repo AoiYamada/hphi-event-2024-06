@@ -13,7 +13,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 122 39% 49%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;
@@ -33,36 +33,16 @@
     --ring: 222.2 84% 4.9%;
 
     --radius: 0.5rem;
+
+    --base: 222.2 47.4% 11.2%;
+    --neutral: 210 40% 96.1%;
   }
 
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+  .theme-b {
+    --base: 230 50% 98%;
+    /* --primary: 100 80% 45%; */
+    --primary: 190 95% 25%;
+    --neutral: 200 50% 15%;
   }
 }
 
@@ -77,4 +57,9 @@
 
 input:-internal-autofill-selected {
   background-color: transparent !important;
+}
+
+.hero-mask-to-r {
+  -webkit-mask-image: linear-gradient(to right, transparent 5%, black 50%);
+  mask-image: linear-gradient(to right, transparent 5%, black 50%);
 }

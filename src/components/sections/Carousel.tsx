@@ -24,20 +24,21 @@ const Carousel = () => {
             if (isSelected) {
               return (
                 <li
-                  className="mx-1 inline-block h-2 w-2 cursor-pointer rounded-full bg-[#4CAF4F]"
-                  aria-label={`Selected: ${label} ${index + 1}`}
+                  className="mx-1 inline-block h-2 w-2 cursor-pointer rounded-full bg-primary"
+                  role="active indicator"
                   title={`Selected: ${label} ${index + 1}`}
+                  aria-label={`Selected: ${label} ${index + 1}`}
                 />
               );
             }
             return (
               <li
-                className="mx-1 inline-block h-2 w-2 cursor-pointer rounded-full bg-[#4CAF4F]/30"
+                className="mx-1 inline-block h-2 w-2 cursor-pointer rounded-full bg-primary/30"
                 onClick={onClickHandler}
                 onKeyDown={onClickHandler}
                 value={index}
                 key={index}
-                role="button"
+                role="indicator"
                 tabIndex={0}
                 title={`${label} ${index + 1}`}
                 aria-label={`${label} ${index + 1}`}
@@ -69,7 +70,7 @@ const Slider = () => {
       <div className="flex flex-col items-start justify-center gap-4">
         <h2 className="flex flex-col items-start justify-center gap-2 text-5xl font-semibold">
           <span>博士級導師親身授課</span>
-          <span className="text-[#4CAF4F]">10+年教學經驗</span>
+          <span className="text-primary">10+年教學經驗</span>
         </h2>
         <Button
           className="flex flex-row justify-between gap-2 text-xs font-normal"

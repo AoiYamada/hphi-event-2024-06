@@ -77,7 +77,7 @@ const ContactForm = () => {
 
       toast({
         title: "資料提交成功",
-        className: "bg-[#4CAF4F] text-white border-none",
+        className: "bg-primary text-white border-none",
       });
     } catch (error) {
       toast({
@@ -184,7 +184,7 @@ const ContactForm = () => {
         />
         <button
           type="submit"
-          className="w-full rounded-md bg-[#4CAF4F] p-2 text-sm text-white"
+          className="w-full rounded-md bg-primary p-2 text-sm text-white"
         >
           立即報名
         </button>
