@@ -40,6 +40,7 @@
 
   .theme-b {
     --base: 230 50% 98%;
+    --background: 230 50% 98%;
     /* --primary: 100 80% 45%; */
     --primary: 190 95% 25%;
     --neutral: 200 50% 15%;

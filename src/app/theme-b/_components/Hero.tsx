@@ -5,6 +5,7 @@ import React, { useEffect, useState } from "react";
 import SignUp from "./SignUp";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
+import KnowMore from "./KnowMore";
 
 const questions = [
   "想成為專業的催眠師？",
@@ -47,15 +48,15 @@ const Hero = () => {
 
   return (
     <MaxWidthWrapper className="relative flex flex-row items-center justify-center gap-8 py-16">
-      <div className="text-neutral z-10 flex w-full flex-col items-start justify-center gap-8 sm:w-1/2 sm:gap-12 md:gap-16">
-        <div className="flex w-full flex-col items-start justify-center gap-4">
+      <div className="text-neutral z-10 flex w-full flex-col items-start justify-center gap-12 sm:w-1/2 md:gap-20">
+        <div className="flex w-full flex-col items-start justify-center gap-2 md:gap-4">
           <div className="text-4xl md:text-6xl lg:text-8xl">你...</div>
           <div className="relative w-full text-2xl font-semibold md:text-3xl lg:text-5xl">
             {questions.map((question, idx) => (
               <h1
                 key={idx}
                 className={cn(
-                  "absolute left-0 top-4 bg-gradient-to-r from-blue-500 to-cyan-500 bg-clip-text leading-tight text-transparent transition-all duration-700 ease-in-out",
+                  "absolute left-0 top-2 bg-gradient-to-r from-blue-500 to-cyan-500 bg-clip-text leading-tight text-transparent transition-all duration-700 ease-in-out md:top-4",
                   {
                     "opacity-100": isShow && showIndex === idx,
                     "opacity-0": !isShow || showIndex !== idx,
@@ -70,7 +71,10 @@ const Hero = () => {
             {longestQuestion}
           </p>
         </div>
-        <SignUp />
+        <div className="flex flex-row gap-4">
+          <KnowMore />
+          <SignUp />
+        </div>
       </div>
       <Image
         src="/hypnotherapy-session.png"
