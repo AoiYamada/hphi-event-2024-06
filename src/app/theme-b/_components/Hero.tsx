@@ -46,11 +46,11 @@ const Hero = () => {
   }, [isShow]);
 
   return (
-    <MaxWidthWrapper className="flex flex-row items-center justify-center gap-8 py-16">
-      <div className="text-neutral flex w-1/2 flex-col items-start justify-center gap-16">
+    <MaxWidthWrapper className="relative flex flex-row items-center justify-center gap-8 py-16">
+      <div className="text-neutral z-10 flex w-full flex-col items-start justify-center gap-8 sm:w-1/2 sm:gap-12 md:gap-16">
         <div className="flex w-full flex-col items-start justify-center gap-4">
-          <div className="text-8xl">你...</div>
-          <div className="relative w-full text-5xl font-semibold">
+          <div className="text-4xl md:text-6xl lg:text-8xl">你...</div>
+          <div className="relative w-full text-2xl font-semibold md:text-3xl lg:text-5xl">
             {questions.map((question, idx) => (
               <h1
                 key={idx}
@@ -66,7 +66,7 @@ const Hero = () => {
               </h1>
             ))}
           </div>
-          <p className="not-sr-only collapse text-5xl leading-tight">
+          <p className="not-sr-only collapse text-2xl leading-tight md:text-3xl lg:text-5xl">
             {longestQuestion}
           </p>
         </div>
@@ -74,7 +74,7 @@ const Hero = () => {
       </div>
       <Image
         src="/hypnotherapy-session.png"
-        className="hero-mask-to-r w-1/2 rounded-lg opacity-80"
+        className="hero-mask-to-r absolute right-0 top-0 h-80 w-auto opacity-20 sm:static sm:h-auto sm:w-1/2 sm:rounded-lg sm:opacity-80"
         alt="hypnotherapy session"
         width={512}
         height={512}
