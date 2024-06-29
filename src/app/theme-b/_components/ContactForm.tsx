@@ -83,7 +83,7 @@ const ContactForm = () => {
 
       toast({
         title: "資料提交成功",
-        className: "bg-primary text-base border-none",
+        className: "bg-primary border-none text-basic",
       });
     } catch (error) {
       toast({
