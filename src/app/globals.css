@@ -34,13 +34,13 @@
 
     --radius: 0.5rem;
 
-    --base: 222.2 47.4% 11.2%;
+    --basic: 222.2 47.4% 11.2%;
     --neutral: 210 40% 96.1%;
   }
 
   .theme-b {
-    --base: 230 50% 98%;
-    --background: 230 50% 98%;
+    --basic: 230 30% 99%;
+    --background: 230 30% 99%;
     /* --primary: 100 80% 45%; */
     --primary: 190 80% 28%;
     --neutral: 200 50% 15%;

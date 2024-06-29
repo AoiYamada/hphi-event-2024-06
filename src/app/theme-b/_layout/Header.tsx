@@ -5,7 +5,10 @@ import HphiLogo from "../_components/HphiLogo";
 
 const Header = () => {
   return (
-    <header className="sticky top-0 z-50 w-full bg-white/90 py-4 shadow-lg">
+    <header
+      id="header"
+      className="sticky top-0 z-50 w-full bg-white/90 py-4 shadow-lg"
+    >
       <MaxWidthWrapper className="flex flex-row items-center justify-between py-0">
         <HphiLogo />
         <SignUp className="hidden sm:flex" />

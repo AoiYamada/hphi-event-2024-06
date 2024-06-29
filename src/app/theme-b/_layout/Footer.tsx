@@ -58,7 +58,7 @@ const contacts: {
 
 const Footer = () => {
   return (
-    <footer className="mt-16 w-full bg-neutral text-base">
+    <footer id="footer" className="text-basic w-full bg-neutral">
       <MaxWidthWrapper className="flex flex-col items-center justify-center gap-8 pb-4 pt-12">
         <div className="flex w-full flex-col justify-between gap-4 md:flex-row md:gap-16">
           <div className="flex-grow pb-8">
@@ -113,7 +113,7 @@ export default Footer;
 
 const IconWrapper: FC<PropsWithChildren> = ({ children }) => {
   return (
-    <div className="flex h-5 w-5 flex-row items-center justify-center rounded-full text-base">
+    <div className="text-basic flex h-5 w-5 flex-row items-center justify-center rounded-full">
       {children}
     </div>
   );
