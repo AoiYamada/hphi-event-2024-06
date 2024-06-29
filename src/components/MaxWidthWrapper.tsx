@@ -1,14 +1,19 @@
 import { cn } from "@/lib/utils";
 
 type MaxWidthWrapperProps = {
+  id?: string;
   className?: string;
   children: React.ReactNode;
 };
 
-const MaxWidthWrapper = ({ className, children }: MaxWidthWrapperProps) => {
+const MaxWidthWrapper = ({ id, className, children }: MaxWidthWrapperProps) => {
   return (
     <div
-      className={cn("mx-auto w-full max-w-screen-xl px-5 md:px-20", className)}
+      id={id}
+      className={cn(
+        "mx-auto w-full max-w-screen-xl px-5 py-16 md:px-20",
+        className,
+      )}
     >
       {children}
     </div>

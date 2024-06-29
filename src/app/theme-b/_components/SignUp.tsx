@@ -15,12 +15,12 @@ const SignUp: FC<SignUpProps> = ({ className }) => {
     <Link href="#contact-us">
       <Button
         className={cn(
-          "text-md flex flex-row justify-between bg-primary text-base font-normal",
+          "flex flex-row justify-center bg-primary text-base font-normal",
           className,
         )}
       >
-        <span className="pl-2.5">立即報名</span>
-        <ChevronRight size={24} />
+        <span className="pl-2">立即報名</span>
+        <ChevronRight size={20} />
       </Button>
     </Link>
   );

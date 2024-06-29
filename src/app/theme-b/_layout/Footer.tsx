@@ -58,8 +58,8 @@ const contacts: {
 
 const Footer = () => {
   return (
-    <footer className="bg-neutral w-full pb-4 pt-12 text-base">
-      <MaxWidthWrapper className="flex flex-col items-center justify-center gap-8">
+    <footer className="mt-16 w-full bg-neutral text-base">
+      <MaxWidthWrapper className="flex flex-col items-center justify-center gap-8 pb-4 pt-12">
         <div className="flex w-full flex-col justify-between gap-4 md:flex-row md:gap-16">
           <div className="flex-grow pb-8">
             <Image
@@ -71,7 +71,7 @@ const Footer = () => {
             />
           </div>
           <div className="flex flex-col items-start justify-start gap-2">
-            <h3 className="text-lg font-semibold">專業課程</h3>
+            <h3 className="text-lg font-semibold">其他課程</h3>
             <ul className="text-md flex flex-col items-start justify-start gap-1">
               {courses.map((course) => (
                 <li key={course.name}>

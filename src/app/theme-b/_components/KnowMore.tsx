@@ -14,7 +14,7 @@ const KnowMore: FC<SignUpProps> = ({ className }) => {
     <Link href="#contact-us">
       <Button
         className={cn(
-          "text-md bg-base text-neutral flex flex-row justify-between border-primary font-normal",
+          "bg-base text-neutral flex flex-row justify-between border-primary font-normal",
           className,
         )}
         variant="outline"
