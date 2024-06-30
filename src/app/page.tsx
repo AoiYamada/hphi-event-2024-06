@@ -1,32 +1,30 @@
-import Footer from "@/components/layout/Footer";
-import Header from "@/components/layout/Header";
-import Arrangements from "@/components/sections/Arrangements";
-import Carousel from "@/components/sections/Carousel";
-import CertCourses from "@/components/sections/CertCourses";
-import ContactUs from "@/components/sections/ContactUs";
-import CourseContents from "@/components/sections/CourseContents";
-import Features from "@/components/sections/Features";
-import Objectives from "@/components/sections/Objectives";
-import RecAsso from "@/components/sections/RecAsso";
 import { Toaster } from "@/components/ui/toaster";
+import SignUp from "./theme-b/_components/SignUp";
+import Footer from "./theme-b/_layout/Footer";
+import Header from "./theme-b/_layout/Header";
+import ContactUs from "./theme-b/_sections/ContactUs";
+import CourseInfo from "./theme-b/_sections/CourseInfo";
+import Hero from "./theme-b/_sections/Hero";
+import RecAsso from "./theme-b/_sections/RecAsso";
+import TimeSlot from "./theme-b/_sections/TimeSlot";
 
 function Home() {
   return (
-    <>
+    <div className="theme-b relative">
       <Header />
-      <main>
-        <Carousel />
+      <div className="w-full">
+        <Hero />
+        <CourseInfo />
+        <TimeSlot />
         <RecAsso />
-        <CertCourses />
-        <Objectives />
-        <CourseContents />
-        <Features />
-        <Arrangements />
         <ContactUs />
-      </main>
+      </div>
       <Footer />
+      <div className="sticky bottom-0 h-0 sm:hidden">
+        <SignUp className="absolute bottom-4 right-4" />
+      </div>
       <Toaster />
-    </>
+    </div>
   );
 }
 
