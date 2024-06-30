@@ -46,8 +46,8 @@ const contacts: {
   },
   {
     icon: <Youtube />,
-    name: "筆求人",
-    link: "https://www.youtube.com/c/%E7%AD%86%E6%B1%82%E4%BA%BA",
+    name: "潛意識達人",
+    link: "https://www.youtube.com/@know.the.inside",
   },
   {
     icon: <Mail />,
@@ -101,7 +101,8 @@ const Footer = () => {
         </div>
         <div className="w-full text-xs font-light">
           <p className="leading-6">
-            Copyright © 2024 HPHI EDUCATION LIMITED All rights reserved
+            Copyright © {new Date().getFullYear()} HPHI EDUCATION LIMITED All
+            rights reserved
           </p>
         </div>
       </MaxWidthWrapper>

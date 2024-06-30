@@ -69,9 +69,9 @@ const CourseInfo = () => {
                   <CircleDollarSign size={36} />
                   <div className="flex flex-col">
                     <span className="text-lg font-semibold">學費</span>
-                    <span>HKD 15800/人</span>
+                    <span>HKD 15,800/人</span>
                     <span className="font-semibold text-primary">
-                      現有十周年 88 折優惠
+                      現有十周年 88 折優惠（HKD 13,800/人）
                     </span>
                     <span className="font-semibold text-primary">
                       名額有限，先報先得
