@@ -54,7 +54,7 @@ const Banner = () => {
           />
         ))}
       </div>
-      <p className="not-sr-only collapse text-2xl leading-tight md:text-3xl lg:text-5xl">
+      <p className="collapse text-2xl leading-tight md:text-3xl lg:text-5xl">
         {longestQuestion}
       </p>
     </div>
