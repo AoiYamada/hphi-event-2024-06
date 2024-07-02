@@ -7,6 +7,7 @@ import CourseInfo from "./theme-b/_sections/CourseInfo";
 import Hero from "./theme-b/_sections/Hero";
 import RecAsso from "./theme-b/_sections/RecAsso";
 import TimeSlot from "./theme-b/_sections/TimeSlot";
+import Students from "./theme-b/_sections/Students";
 
 function Home() {
   return (
@@ -17,6 +18,7 @@ function Home() {
         <CourseInfo />
         <TimeSlot />
         <RecAsso />
+        <Students />
         <ContactUs />
       </div>
       <Footer />

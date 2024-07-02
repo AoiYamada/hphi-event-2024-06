@@ -13,7 +13,7 @@ const students: StorySlideProps[] = [
     name: "葉蘊妍",
     description: [
       "每位運動員的汗水背後，都背負無比壓力，葉蘊妍亦不例外。對催眠感到好奇的她在接受本中心的催眠治療後，心理質素和自信心有了大幅的提升。",
-      "比起傳統心理輔導方法，她認為催眠治療更為快速有效。催眠有效地幫助她釋放自我及放鬆、調整情緒，並令她的心理保持在佳的狀態下面對比賽、發揮最佳水平。",
+      "比起傳統心理輔導方法，她認為催眠治療更為快速有效。催眠有效地幫助她釋放自我及放鬆、調整情緒，並令她的心理保持在最佳的狀態下面對比賽、發揮傑出水平。",
     ],
   },
   {
@@ -114,7 +114,7 @@ const StorySlide: FC<StorySlideProps> = ({
   image,
 }) => {
   return (
-    <div className="flex max-w-sm flex-col items-start gap-4 text-start">
+    <div className="w-sm flex max-w-full flex-col items-start gap-4 text-start">
       <div className="mb-8 flex w-full flex-col items-center">
         <div className="h-48 w-48">
           <Image
