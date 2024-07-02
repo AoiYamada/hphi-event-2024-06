@@ -55,6 +55,9 @@ const Sharing: FC<SharingProps> = ({ className }) => {
         showStatus={false}
         showThumbs={false}
         renderIndicator={RenderIndicator}
+        // https://github.com/leandrowd/react-responsive-carousel/issues/469#issuecomment-1148934349
+        preventMovementUntilSwipeScrollTolerance={true}
+        swipeScrollTolerance={50}
       >
         {students.map((student, i) => (
           <StorySlide key={i} {...student} />
