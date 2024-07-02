@@ -11,7 +11,7 @@ const CourseInfo = () => {
   return (
     <section id="course-info" className="w-full">
       <MaxWidthWrapper className="flex flex-col items-center justify-center text-neutral">
-        <div className="bg-basic/50 flex flex-col items-center justify-center gap-12 rounded-lg border border-neutral/10 px-4 pb-16 pt-12 shadow-md md:px-12">
+        <div className="flex flex-col items-center justify-center gap-12 rounded-lg border border-neutral/10 bg-basic/50 px-4 pb-16 pt-12 shadow-md md:px-12">
           <h1 className="flex flex-col items-center justify-center text-3xl font-semibold sm:flex-row sm:text-4xl lg:text-5xl">
             <span>應用催眠心理學</span>
             <span>短期進修課程</span>
@@ -42,7 +42,7 @@ const CourseInfo = () => {
                   課程安排
                 </h2>
                 <div className="flex flex-row items-start gap-4">
-                  <Clock size={36} />
+                  <Clock size={36} className="pt-1" />
                   <div className="flex flex-col">
                     <span className="text-lg font-semibold">120 小時課程</span>
                     <span>實體課：54 小時（必修）</span>
@@ -50,7 +50,7 @@ const CourseInfo = () => {
                   </div>
                 </div>
                 <div className="flex flex-row items-start gap-4">
-                  <UsersRound size={36} />
+                  <UsersRound size={36} className="pt-1" />
                   <div className="flex flex-col">
                     <span className="text-lg font-semibold">小組教學</span>
                     <span>10 人以內</span>
@@ -58,7 +58,7 @@ const CourseInfo = () => {
                   </div>
                 </div>
                 <div className="flex flex-row items-start gap-4">
-                  <Languages size={36} />
+                  <Languages size={36} className="pt-1" />
                   <div className="flex flex-col">
                     <span className="text-lg font-semibold">教學語言</span>
                     <span>粵語授課</span>
@@ -66,7 +66,7 @@ const CourseInfo = () => {
                   </div>
                 </div>
                 <div className="flex flex-row items-start gap-4">
-                  <CircleDollarSign size={36} />
+                  <CircleDollarSign size={36} className="pt-1" />
                   <div className="flex flex-col">
                     <span className="text-lg font-semibold">學費</span>
                     <span className="text-nowrap">

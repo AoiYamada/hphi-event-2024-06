@@ -4,6 +4,7 @@ import CourseInfo from "./_sections/CourseInfo";
 import TimeSlot from "./_sections/TimeSlot";
 import ContactUs from "./_sections/ContactUs";
 import RecAsso from "./_sections/RecAsso";
+import Students from "./_sections/Students";
 
 const Page = () => {
   return (
@@ -12,6 +13,7 @@ const Page = () => {
       <CourseInfo />
       <TimeSlot />
       <RecAsso />
+      <Students />
       <ContactUs />
     </div>
   );

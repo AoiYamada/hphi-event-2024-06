@@ -1,7 +1,7 @@
 "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
-import React from "react";
+import React, { FC } from "react";
 import { z } from "zod";
 import { useForm } from "react-hook-form";
 import { useToast } from "@/components/ui/use-toast";
@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { cn } from "@/lib/utils";
 
 const formSchema = z.object({
   name: z
@@ -58,7 +59,11 @@ const formSchema = z.object({
     }),
 });
 
-const ContactForm = () => {
+type ContactFormProps = {
+  className?: string;
+};
+
+const ContactForm: FC<ContactFormProps> = ({ className }) => {
   const { toast } = useToast();
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -97,10 +102,13 @@ const ContactForm = () => {
   return (
     <Form {...form}>
       <form
-        className="flex w-full max-w-lg flex-col items-center justify-center gap-2 text-lg"
+        className={cn(
+          "flex flex-col items-center justify-center gap-2 text-lg",
+          className,
+        )}
         onSubmit={form.handleSubmit(onSubmit)}
       >
-        <div className="flex w-full flex-col items-start justify-between gap-2 md:flex-row">
+        <div className="flex w-full flex-col items-start justify-between gap-2 xl:flex-row">
           <FormField
             control={form.control}
             name="name"
@@ -190,7 +198,7 @@ const ContactForm = () => {
         />
         <button
           type="submit"
-          className="text-basic mt-6 w-full rounded-md bg-primary p-2"
+          className="mt-6 w-full rounded-md bg-primary p-2 text-basic"
         >
           提交
         </button>
