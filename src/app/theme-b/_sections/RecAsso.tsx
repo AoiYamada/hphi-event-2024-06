@@ -6,7 +6,7 @@ const associations: AssoProps[] = [
   {
     title: "美國國家催眠師公會（NGH）",
     description:
-      "成立於1950年，為國際性催眠學會，已有超過七十年培訓催眠師的經驗。",
+      "成立於 1950 年，為國際性催眠學會，已有超過七十年培訓催眠師的經驗。",
     img: "/associations/ngh.gif",
   },
   {
@@ -75,7 +75,7 @@ const Asso: FC<AssoProps> = ({ title, description, img }) => {
           alt={title}
           width={100}
           height={100}
-          className="bg-basic h-full w-full rounded-full"
+          className="h-full w-full rounded-full bg-basic"
         />
       </div>
       <div className="flex flex-col gap-2">

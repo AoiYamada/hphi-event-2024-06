@@ -8,18 +8,20 @@ import Hero from "./theme-b/_sections/Hero";
 import RecAsso from "./theme-b/_sections/RecAsso";
 import TimeSlot from "./theme-b/_sections/TimeSlot";
 import Students from "./theme-b/_sections/Students";
+import Tutor from "./theme-b/_sections/Tutor";
 
 function Home() {
   return (
     <div className="theme-b relative">
       <Header />
-      <div className="w-full">
+      <div className="w-full pb-16">
         <Hero />
         <CourseInfo />
         <TimeSlot />
-        <RecAsso />
+        <Tutor />
         <Students />
         <ContactUs />
+        <RecAsso />
       </div>
       <Footer />
       <div className="sticky bottom-0 h-0 sm:hidden">

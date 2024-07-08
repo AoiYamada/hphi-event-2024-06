@@ -122,7 +122,7 @@ const StorySlide: FC<StorySlideProps> = ({
         <div className="h-48 w-48">
           <Image
             src={image}
-            alt={name}
+            alt={`${name}(${title})`}
             width={300}
             height={300}
             className="rounded-full"

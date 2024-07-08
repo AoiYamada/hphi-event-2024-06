@@ -12,9 +12,9 @@ const Page = () => {
       <Hero />
       <CourseInfo />
       <TimeSlot />
-      <RecAsso />
       <Students />
       <ContactUs />
+      <RecAsso />
     </div>
   );
 };
