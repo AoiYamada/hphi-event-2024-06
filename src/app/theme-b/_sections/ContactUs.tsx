@@ -11,7 +11,7 @@ const ContactUs = () => {
           聯絡我們
         </h1>
         <div className="flex w-full flex-row items-start justify-center gap-16">
-          <Sharing className="hidden max-w-lg lg:inline" />
+          <Sharing className="hidden max-w-md lg:inline" />
           <ContactForm className="w-full max-w-lg" />
         </div>
       </MaxWidthWrapper>
