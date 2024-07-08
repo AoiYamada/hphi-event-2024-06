@@ -62,9 +62,11 @@ const Tutor = () => {
               </h2>
               <div>
                 <h3 className="text-lg font-semibold">專業資格</h3>
-                <ul className="list-outside list-disc">
+                <ul className="list-outside list-disc pl-4">
                   {qualifications.map((qualification, index) => (
-                    <li key={index}>{qualification}</li>
+                    <li key={index} className="pl-2">
+                      {qualification}
+                    </li>
                   ))}
                 </ul>
               </div>
