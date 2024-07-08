@@ -1,30 +1,19 @@
 import React from "react";
-import MaxWidthWrapper from "../MaxWidthWrapper";
-import Image from "next/image";
+import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import ContactForm from "../ContactForm";
+import Sharing from "../Sharing";
 
 const ContactUs = () => {
   return (
-    <section className="w-full bg-[#F5F7FA]" id="contact-us">
-      <MaxWidthWrapper className="flex flex-col items-center justify-center">
-        <div className="flex w-full flex-row items-center justify-center gap-16">
-          <Image
-            src="/call-to-action.png"
-            alt="立即報名"
-            width={45}
-            height={32}
-          />
-          <div>
-            <p>
-              如有任何問題，請致電📞26261828或
-              <br />
-              whatsapp📲93098317或
-              <br />
-              填妥下面表格📄:
-            </p>
-          </div>
+    <section className="w-full" id="contact-us">
+      <MaxWidthWrapper className="flex flex-col items-center justify-center gap-12">
+        <h1 className="flex flex-col items-center justify-center text-3xl font-semibold sm:flex-row sm:text-4xl lg:text-5xl">
+          聯絡我們
+        </h1>
+        <div className="flex w-full flex-row items-start justify-center gap-16">
+          <Sharing className="hidden max-w-md lg:inline" />
+          <ContactForm className="w-full max-w-lg" />
         </div>
-        <ContactForm />
       </MaxWidthWrapper>
     </section>
   );

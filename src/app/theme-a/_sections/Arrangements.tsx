@@ -1,6 +1,6 @@
 import React from "react";
-import MaxWidthWrapper from "../MaxWidthWrapper";
 import Image from "next/image";
+import MaxWidthWrapper from "../_components/MaxWidthWrapper";
 
 const Arrangements = () => {
   return (

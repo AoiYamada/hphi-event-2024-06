@@ -1,6 +1,6 @@
 import React, { FC, PropsWithChildren } from "react";
-import MaxWidthWrapper from "../MaxWidthWrapper";
 import Image from "next/image";
+import MaxWidthWrapper from "../_components/MaxWidthWrapper";
 
 const CertCourses = () => {
   return (

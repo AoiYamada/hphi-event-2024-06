@@ -1,18 +1,30 @@
 "use client";
 
-import React from "react";
-import { Button } from "./ui/button";
-import { MoveRight } from "lucide-react";
-import Link from "next/link";
+import React, { FC } from "react";
+import { ChevronRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
-const SignUp = () => {
+type SignUpProps = {
+  className?: string;
+};
+
+const SignUp: FC<SignUpProps> = ({ className }) => {
   return (
-    <Link href="#contact-us">
-      <Button className="flex flex-row justify-between gap-2 bg-primary text-xs font-normal">
-        <span>立即報名</span>
-        <MoveRight size={12} />
-      </Button>
-    </Link>
+    <Button
+      className={cn(
+        "text-basic flex flex-row justify-center bg-primary font-normal",
+        className,
+      )}
+      onClick={() => {
+        document.getElementById("contact-us")?.scrollIntoView({
+          behavior: "smooth",
+        });
+      }}
+    >
+      <span className="pl-2">立即報名</span>
+      <ChevronRight size={20} />
+    </Button>
   );
 };
 

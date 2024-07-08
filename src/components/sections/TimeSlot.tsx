@@ -1,5 +1,5 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import SignUp from "../_components/SignUp";
+import SignUp from "../SignUp";
 import { FC } from "react";
 
 const TimeSlot = () => {
@@ -50,7 +50,7 @@ type ClassCardProps = {
 
 const ClassCard: FC<ClassCardProps> = ({ title, time, dates }) => {
   return (
-    <div className="bg-basic/50 flex flex-col items-center justify-start gap-4 rounded-lg border border-neutral/10 p-12 shadow-md">
+    <div className="flex flex-col items-center justify-start gap-4 rounded-lg border border-neutral/10 bg-basic/50 p-12 shadow-md">
       <h2 className="text-2xl font-semibold text-primary">{title}</h2>
       <div className="flex flex-col">
         <div className="flex flex-row">

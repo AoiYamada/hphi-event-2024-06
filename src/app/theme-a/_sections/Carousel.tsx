@@ -2,12 +2,12 @@
 
 import React from "react";
 import { Carousel as RRCarousel } from "react-responsive-carousel";
-import MaxWidthWrapper from "../MaxWidthWrapper";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Image from "next/image";
-import { Button } from "../ui/button";
 import Link from "next/link";
+import MaxWidthWrapper from "../_components/MaxWidthWrapper";
+import { Button } from "@/components/ui/button";
 
 const Carousel = () => {
   return (

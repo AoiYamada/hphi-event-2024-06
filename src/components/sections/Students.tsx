@@ -1,5 +1,5 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import Sharing from "../_components/Sharing";
+import Sharing from "../Sharing";
 
 const Students = () => {
   return (

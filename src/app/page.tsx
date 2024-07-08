@@ -1,14 +1,14 @@
 import { Toaster } from "@/components/ui/toaster";
-import SignUp from "./theme-b/_components/SignUp";
-import Footer from "./theme-b/_layout/Footer";
-import Header from "./theme-b/_layout/Header";
-import ContactUs from "./theme-b/_sections/ContactUs";
-import CourseInfo from "./theme-b/_sections/CourseInfo";
-import Hero from "./theme-b/_sections/Hero";
-import RecAsso from "./theme-b/_sections/RecAsso";
-import TimeSlot from "./theme-b/_sections/TimeSlot";
-import Students from "./theme-b/_sections/Students";
-import Tutor from "./theme-b/_sections/Tutor";
+import SignUp from "../components/SignUp";
+import Footer from "../components/layout/Footer";
+import Header from "../components/layout/Header";
+import ContactUs from "../components/sections/ContactUs";
+import CourseInfo from "../components/sections/CourseInfo";
+import Hero from "../components/sections/Hero";
+import RecAsso from "../components/sections/RecAsso";
+import TimeSlot from "../components/sections/TimeSlot";
+import Students from "../components/sections/Students";
+import Tutor from "../components/sections/Tutor";
 
 function Home() {
   return (

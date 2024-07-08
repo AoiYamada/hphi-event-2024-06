@@ -1,10 +1,8 @@
 "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
-import React, { FC } from "react";
+import React from "react";
 import { z } from "zod";
-import { useForm } from "react-hook-form";
-import { useToast } from "@/components/ui/use-toast";
 import {
   Form,
   FormControl,
@@ -12,9 +10,10 @@ import {
   FormItem,
   FormMessage,
 } from "@/components/ui/form";
+import { useForm } from "react-hook-form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { cn } from "@/lib/utils";
+import { useToast } from "@/components/ui/use-toast";
 
 const formSchema = z.object({
   name: z
@@ -59,11 +58,7 @@ const formSchema = z.object({
     }),
 });
 
-type ContactFormProps = {
-  className?: string;
-};
-
-const ContactForm: FC<ContactFormProps> = ({ className }) => {
+const ContactForm = () => {
   const { toast } = useToast();
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -88,7 +83,7 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
 
       toast({
         title: "資料提交成功",
-        className: "bg-primary border-none text-basic",
+        className: "bg-primary text-white border-none",
       });
     } catch (error) {
       toast({
@@ -102,13 +97,10 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
   return (
     <Form {...form}>
       <form
-        className={cn(
-          "flex flex-col items-center justify-center gap-2 text-lg",
-          className,
-        )}
+        className="flex w-full max-w-xl flex-col items-center justify-center gap-2 py-8"
         onSubmit={form.handleSubmit(onSubmit)}
       >
-        <div className="flex w-full flex-col items-start justify-between gap-2 xl:flex-row">
+        <div className="flex w-full flex-row items-start justify-between gap-2">
           <FormField
             control={form.control}
             name="name"
@@ -118,7 +110,7 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
                   <Input
                     type="text"
                     placeholder="姓名"
-                    className="w-full rounded-md border border-neutral/20 p-2"
+                    className="w-full rounded-md border border-gray-300 p-2 text-sm"
                     {...field}
                   />
                 </FormControl>
@@ -135,7 +127,7 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
                   <Input
                     type="email"
                     placeholder="電郵"
-                    className="w-full rounded-md border border-neutral/20 p-2"
+                    className="w-full rounded-md border border-gray-300 p-2 text-sm"
                     {...field}
                   />
                 </FormControl>
@@ -153,7 +145,7 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
                 <Input
                   type="text"
                   placeholder="電話"
-                  className="w-full rounded-md border border-neutral/20 p-2"
+                  className="w-full rounded-md border border-gray-300 p-2 text-sm"
                   {...field}
                 />
               </FormControl>
@@ -170,7 +162,7 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
                 <Input
                   type="text"
                   placeholder="主題"
-                  className="w-full rounded-md border border-neutral/20 p-2"
+                  className="w-full rounded-md border border-gray-300 p-2 text-sm"
                   {...field}
                 />
               </FormControl>
@@ -186,7 +178,7 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
               <FormControl>
                 <Textarea
                   placeholder="內容"
-                  className="focus:ring-offset-opacity-50 w-full rounded-md border border-neutral/10 p-2"
+                  className="focus:ring-offset-opacity-50 w-full rounded-md border border-gray-300 p-2 text-sm"
                   cols={30}
                   rows={10}
                   {...field}
@@ -198,9 +190,9 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
         />
         <button
           type="submit"
-          className="mt-6 w-full rounded-md bg-primary p-2 text-basic"
+          className="w-full rounded-md bg-primary p-2 text-sm text-white"
         >
-          提交
+          立即報名
         </button>
       </form>
     </Form>

@@ -1,22 +1,17 @@
 import React from "react";
-import MaxWidthWrapper from "../MaxWidthWrapper";
-import Image from "next/image";
+import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import SignUp from "../SignUp";
+import HphiLogo from "../HphiLogo";
 
 const Header = () => {
   return (
-    <header className="w-full py-4">
-      <MaxWidthWrapper className="flex flex-row justify-between">
-        <div className="flex flex-row justify-between items-center gap-4">
-          <Image
-            src="/hphi-logo.png"
-            alt="HPHI 專業心理治療(香港)中心 Logo"
-            width={45}
-            height={32}
-          />
-          <div>專業心理治療(香港)中心</div>
-        </div>
-        <SignUp />
+    <header
+      id="header"
+      className="sticky top-0 z-50 w-full bg-white/90 py-4 shadow-lg"
+    >
+      <MaxWidthWrapper className="flex flex-row items-center justify-between py-0">
+        <HphiLogo />
+        <SignUp className="hidden sm:flex" />
       </MaxWidthWrapper>
     </header>
   );
