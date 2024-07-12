@@ -19,7 +19,7 @@ const CourseInfo = () => {
           <div className="relative w-full">
             <div className="flex flex-col items-start justify-start gap-16 lg:flex-row">
               <Intro className="lg:w-3/5" />
-              <div className="flex w-full flex-col gap-12 md:flex-row lg:w-auto lg:flex-col">
+              <div className="flex w-full flex-col gap-12 md:flex-row lg:w-2/5 lg:shrink-0 lg:flex-col">
                 <Aim className="w-full md:w-1/2 lg:w-full" />
                 <Syllabus className="w-full md:w-1/2 md:shrink-0 lg:w-full" />
               </div>
@@ -28,16 +28,16 @@ const CourseInfo = () => {
           </div>
           <div className="relative w-full">
             <div className="flex w-full flex-col items-start justify-start gap-16 md:flex-row lg:gap-16">
-              <div className="lg:w-3/5 lg:shrink-0">
+              <div className="lg:w-3/5">
                 <Image
                   src="/teaching-hypnotherapy.webp"
                   width={416}
                   height={360}
                   alt="teaching-hypnotherapy"
-                  className="w-full rounded-lg opacity-80"
+                  className="w-full rounded-lg opacity-90"
                 />
               </div>
-              <Arrangement className="w-full md:w-1/2 md:shrink-0 lg:w-auto lg:shrink" />
+              <Arrangement className="w-full md:w-1/2 md:shrink-0 lg:w-2/5" />
             </div>
             <CardBg />
           </div>

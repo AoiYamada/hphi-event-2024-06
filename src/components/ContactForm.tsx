@@ -41,21 +41,13 @@ const formSchema = z.object({
     .max(16, {
       message: "電話號碼過長",
     }),
-  subject: z
-    .string()
-    .min(1, {
-      message: "主題不能為空",
-    })
-    .max(50, {
-      message: "主題過長 (>50字)",
-    }),
   content: z
     .string()
     .min(1, {
       message: "內容不能為空",
     })
     .max(500, {
-      message: "內容太長 (>500字)",
+      message: "內容過長 (>500字)",
     }),
 });
 
@@ -71,7 +63,6 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
       name: "",
       email: "",
       phone: "",
-      subject: "",
       content: "",
     },
   });
@@ -117,7 +108,7 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
                 <FormControl>
                   <Input
                     type="text"
-                    placeholder="姓名"
+                    placeholder="姓名*"
                     className="w-full rounded-md border border-neutral/20 p-2"
                     {...field}
                   />
@@ -128,13 +119,13 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
           />
           <FormField
             control={form.control}
-            name="email"
+            name="phone"
             render={({ field }) => (
               <FormItem className="w-full">
                 <FormControl>
                   <Input
-                    type="email"
-                    placeholder="電郵"
+                    type="text"
+                    placeholder="電話*"
                     className="w-full rounded-md border border-neutral/20 p-2"
                     {...field}
                   />
@@ -146,13 +137,13 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
         </div>
         <FormField
           control={form.control}
-          name="phone"
+          name="email"
           render={({ field }) => (
             <FormItem className="w-full">
               <FormControl>
                 <Input
-                  type="text"
-                  placeholder="電話"
+                  type="email"
+                  placeholder="電郵*"
                   className="w-full rounded-md border border-neutral/20 p-2"
                   {...field}
                 />
@@ -161,23 +152,7 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
             </FormItem>
           )}
         />
-        <FormField
-          control={form.control}
-          name="subject"
-          render={({ field }) => (
-            <FormItem className="w-full">
-              <FormControl>
-                <Input
-                  type="text"
-                  placeholder="主題"
-                  className="w-full rounded-md border border-neutral/20 p-2"
-                  {...field}
-                />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
+
         <FormField
           control={form.control}
           name="content"
@@ -185,7 +160,7 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
             <FormItem className="w-full">
               <FormControl>
                 <Textarea
-                  placeholder="內容"
+                  placeholder="我想查詢..."
                   className="focus:ring-offset-opacity-50 w-full rounded-md border border-neutral/10 p-2"
                   cols={30}
                   rows={10}

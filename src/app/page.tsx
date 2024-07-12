@@ -8,7 +8,7 @@ import Hero from "../components/sections/Hero";
 import RecAsso from "../components/sections/RecAsso";
 import TimeSlot from "../components/sections/TimeSlot";
 import Students from "../components/sections/Students";
-import Tutor from "../components/sections/Tutor";
+import Tutors from "../components/sections/Tutors";
 
 function Home() {
   return (
@@ -18,7 +18,7 @@ function Home() {
         <Hero />
         <CourseInfo />
         <TimeSlot />
-        <Tutor />
+        <Tutors />
         <Students />
         <ContactUs />
         <RecAsso />

@@ -27,10 +27,9 @@ const Intro: FC<IntroProps> = ({ className }) => {
             在各個領域的無限應用前景，從而開拓您的事業發展新視野。
           </p>
           <p>
-            通過本課程，您不僅可以獲得美國 NLP
-            協會(ANLP)和英國NLP學會(INLPTA)頒發的雙重國際認證證書，更可成為我們的畢業生社群的一份子。我們將定期為畢業生提供專業交流活動和就業輔導，助您事業腳步更穩健。
+            通過本課程，您更可成為我們的畢業生社群的一份子。我們將定期為畢業生提供專業交流活動和就業輔導，助您事業腳步更穩健。
           </p>
-          <p>立即報名，開啟您 NLP 事業的新篇章!</p>
+          <p>立即報名，開啟您事業的新篇章!</p>
         </div>
       </div>
       <div className="flex flex-row justify-end gap-2 text-sm font-semibold text-primary">

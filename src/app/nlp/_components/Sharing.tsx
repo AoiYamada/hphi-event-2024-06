@@ -5,7 +5,6 @@ import Image from "next/image";
 import { FC } from "react";
 import { Carousel, CarouselProps } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import RenderIndicator from "./RenderIndicator";
 
 const students: StorySlideProps[] = [
   {
@@ -13,8 +12,8 @@ const students: StorySlideProps[] = [
     title: "世界桌球冠軍",
     name: "葉蘊妍",
     description: [
-      "每位運動員的汗水背後，都背負著無比壓力，葉蘊妍亦不例外。對催眠感到好奇的她在接受本中心的催眠治療後，心理質素和自信心有了大幅的提升。",
-      "比起傳統心理輔導方法，她認為催眠治療更為快速有效。催眠有效地幫助她釋放自我及放鬆、調整情緒，並令她的心理保持在最佳的狀態下面對比賽、發揮傑出水平。",
+      "每位運動員的汗水背後，都背負著無比壓力，葉蘊妍亦不例外。對 NLP 感到好奇的她在接受本中心的 NLP 後，心理質素和自信心有了大幅的提升。",
+      "比起傳統心理輔導方法，她認為 NLP 更為快速有效。 NLP 有效地幫助她釋放自我及放鬆、調整情緒，並令她的心理保持在最佳的狀態下面對比賽、發揮傑出水平。",
     ],
   },
   {
@@ -23,8 +22,8 @@ const students: StorySlideProps[] = [
     name: "Alvin Wong",
     subtitle: "Fast And Brilliant HR Group",
     description: [
-      "Alvin 在數年前因工作壓力過大及希望改善溝通技巧，報讀了本中心的催眠及 NLP 導師課程。",
-      "學會催眠及 NLP 後，他不但提升了溝通及與人相處的技巧，亦把這些技巧應用至公司的發展中，令他在數年間帶領公司從不足十人成長至數千人。",
+      "Alvin 在數年前因工作壓力過大及希望改善溝通技巧，報讀了本中心的 NLP 導師課程。",
+      "學會 NLP 後，他不但提升了溝通及與人相處的技巧，亦把這些技巧應用至公司的發展中，令他在數年間帶領公司從不足十人成長至數千人。",
       "他覺得一切得歸功於本中心紮實的課程內容，對此表示由衷感謝。",
     ],
   },
@@ -33,9 +32,9 @@ const students: StorySlideProps[] = [
     title: "駐校社工",
     name: "Jason Kam",
     description: [
-      "Jason 在實習期間，見過資深社工為經歷喪親的大學生進行心理輔導時，使用催眠的技術。催眠的成效顯著，有效地幫助求助者減輕喪慟情緒。",
-      "及後他報讀了本中心的催眠師課程，畢業後結合本來在學院所學的心理輔導技巧，將催眠應用到會話與治療計劃當中。",
-      "他表示催眠比起單純使用傳統心理輔導，效果更為明顯快捷，能幫助求助者有效面對負面情緒，課程十分適合有志投身輔導行業的人仕報讀。",
+      "Jason 在實習期間，見過資深社工為經歷喪親的大學生進行心理輔導時，使用 NLP 的技術。 NLP 的成效顯著，有效地幫助求助者減輕喪慟情緒。",
+      "及後他報讀了本中心的 NLP 課程，畢業後結合本來在學院所學的心理輔導技巧，將 NLP 應用到會話與治療計劃當中。",
+      "他表示 NLP 比起單純使用傳統心理輔導，效果更為明顯快捷，能幫助求助者有效面對負面情緒，課程十分適合有志投身輔導行業的人仕報讀。",
     ],
   },
 ];
@@ -69,6 +68,38 @@ const Sharing: FC<SharingProps> = ({ className }) => {
 };
 
 export default Sharing;
+
+const RenderIndicator: CarouselProps["renderIndicator"] = (
+  onClickHandler,
+  isSelected,
+  index,
+  label,
+) => {
+  if (isSelected) {
+    return (
+      <li
+        className="mx-1 inline-block h-2 w-2 cursor-pointer rounded-full bg-primary"
+        role="active indicator"
+        title={`Selected: ${label} ${index + 1}`}
+        aria-label={`Selected: ${label} ${index + 1}`}
+      />
+    );
+  }
+
+  return (
+    <li
+      className="mx-1 inline-block h-2 w-2 cursor-pointer rounded-full bg-primary/30"
+      onClick={onClickHandler}
+      onKeyDown={onClickHandler}
+      value={index}
+      key={index}
+      role="indicator"
+      tabIndex={0}
+      title={`${label} ${index + 1}`}
+      aria-label={`${label} ${index + 1}`}
+    />
+  );
+};
 
 type StorySlideProps = {
   title: string;

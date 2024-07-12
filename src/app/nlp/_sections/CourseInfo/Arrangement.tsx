@@ -28,7 +28,7 @@ const Arrangement: FC<ArrangementProps> = ({ className }) => {
       </div>
       <div className="flex flex-row items-start gap-4">
         <UsersRound size={36} className="shrink-0 pt-1" />
-        <div className="flex max-w-72 flex-col">
+        <div className="flex flex-col">
           <span className="text-lg font-semibold">學員交流聚會</span>
           <span>課程完結後可按需要重溫</span>
           <span>不定期學員、師兄弟交流聚會</span>
@@ -37,7 +37,7 @@ const Arrangement: FC<ArrangementProps> = ({ className }) => {
       </div>
       <div className="flex flex-row items-start gap-4">
         <MessagesSquare size={36} className="shrink-0 pt-1" />
-        <div className="flex max-w-72 flex-col">
+        <div className="flex flex-col">
           <span className="text-lg font-semibold">導師交流</span>
           <span>24 小時 WHATSAPP 與導師交流</span>
           <span>NLP 群組</span>
@@ -45,7 +45,7 @@ const Arrangement: FC<ArrangementProps> = ({ className }) => {
       </div>
       <div className="flex flex-row items-start gap-4">
         <Languages size={36} className="shrink-0 pt-1" />
-        <div className="flex max-w-72 flex-col">
+        <div className="flex flex-col">
           <span className="text-lg font-semibold">教學語言</span>
           <span>粵語授課</span>
           <span>英語輔助</span>
@@ -53,19 +53,15 @@ const Arrangement: FC<ArrangementProps> = ({ className }) => {
       </div>
       <div className="flex flex-row items-start gap-4">
         <CircleDollarSign size={36} className="shrink-0 pt-1" />
-        <div className="flex max-w-72 flex-col">
+        <div className="flex flex-col">
           <span className="text-lg font-semibold">學費</span>
           <span className="text-nowrap">
-            原　價：HKD{" "}
+            正　　價：HKD{" "}
             <span className="text-nowrap line-through">15,800/人</span>
           </span>
-          <span className="text-nowrap text-red-600">
-            優惠價：HKD <span className="text-nowrap">13,800/人</span>
-            （88 折）
-          </span>
-          <span className="mt-2 text-sm font-semibold text-primary">
-            <p>* 十周年優惠、名額有限、先報先得</p>
-            <p>* 可申請持續進修基金，最高可獲 8 成支助，僅需付 HKD 2760!</p>
+          <span className="text-red-600">
+            早鳥優惠：HKD <span className="text-nowrap">13,800/人</span>
+            （提早兩星期報名），申請可持續進修基金後，只需付$2760
           </span>
         </div>
       </div>
