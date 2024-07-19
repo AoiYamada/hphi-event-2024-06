@@ -6,9 +6,10 @@ import SignUp from "../../components/SignUp";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "2024 年暑期身心語言程式學課程 | 專業心理治療(香港)中心",
+  title:
+    "2024 年暑期身心語言程式學課程 | 專業心理治療及催眠應用（香港）有限公司 HPHI EDUCATION LIMITED",
   description:
-    "專業心理治療(香港)中心 HPHI 是一所為普羅市民提供專業心理輔導服務的機構，並提供一系列的催眠師課程，包括 NLP、NGH、PBH 等國際認可的心理治療、催眠課程，向學員和案主解說催眠術入門知識。",
+    "專業心理治療及催眠應用（香港）有限公司 （HPHI） 是一所為普羅市民提供專業心理輔導服務的機構，並提供一系列的催眠師課程，包括 NLP、NGH、PBH 等國際認可的心理治療、催眠課程，向學員和案主解說催眠術入門知識。",
 };
 
 const Layout: FC<PropsWithChildren> = ({ children }) => {

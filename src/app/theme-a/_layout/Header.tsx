@@ -10,11 +10,13 @@ const Header = () => {
         <div className="flex flex-row items-center justify-between gap-4">
           <Image
             src="/hphi-logo.png"
-            alt="HPHI 專業心理治療(香港)中心 Logo"
+            alt="專業心理治療及催眠應用（香港）有限公司（HPHI） Logo"
             width={45}
             height={32}
           />
-          <div>專業心理治療(香港)中心</div>
+          <div>
+            專業心理治療及催眠應用（香港）有限公司 HPHI EDUCATION LIMITED
+          </div>
         </div>
         <SignUp />
       </MaxWidthWrapper>

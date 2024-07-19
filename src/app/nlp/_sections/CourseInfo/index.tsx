@@ -37,7 +37,17 @@ const CourseInfo = () => {
                     主要學習及培訓範疇
                   </th>
                   <td className="max-w-lg border border-solid border-neutral p-2 align-top">
-                    人際溝通、商業及管理
+                    人際溝通技巧、商業、管理技巧
+                  </td>
+                </tr>
+                <tr>
+                  <th className="border border-solid border-neutral p-2 align-top text-primary">
+                    <p>課程特色</p>
+                  </th>
+                  <td className="max-w-lg border border-solid border-neutral p-2 align-top">
+                    <p>
+                      全港首個附設線上學習平台的課程，由博士級導師、心理學家講授
+                    </p>
                   </td>
                 </tr>
               </tbody>

@@ -5,7 +5,7 @@ import Link from "next/link";
 import { WhatsApp } from "@/components/icons/WhatsApp";
 import { Instagram } from "@/components/icons/Instagram";
 import { Youtube } from "@/components/icons/Youtube";
-import { Mail } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 
 const courses: {
   name: string;
@@ -36,6 +36,11 @@ const contacts: {
 }[] = [
   {
     icon: <WhatsApp />,
+    name: "+852 9046 9438",
+    link: "https://wa.me/85290469438",
+  },
+  {
+    icon: <WhatsApp />,
     name: "+852 9309 8317",
     link: "https://wa.me/85293098317",
   },
@@ -54,17 +59,22 @@ const contacts: {
     name: "info@hk-hphi.com",
     link: "mailto:info@hk-hphi.com",
   },
+  {
+    icon: <Phone />,
+    name: "35007168",
+    link: "tel:35007168",
+  },
 ];
 
 const Footer = () => {
   return (
-    <footer id="footer" className="text-basic w-full bg-neutral">
+    <footer id="footer" className="w-full bg-neutral text-basic">
       <MaxWidthWrapper className="flex flex-col items-center justify-center gap-8 pb-4 pt-12">
         <div className="flex w-full flex-col justify-between gap-4 md:flex-row md:gap-16">
           <div className="flex-grow pb-8">
             <Image
               src="/hphi-logo-light.png"
-              alt="HPHI 專業心理治療(香港)中心 Logo"
+              alt="專業心理治療及催眠應用（香港）有限公司（HPHI） Logo"
               width={45 * 3}
               height={32 * 3}
               className="mix-blend-screen"
@@ -114,7 +124,7 @@ export default Footer;
 
 const IconWrapper: FC<PropsWithChildren> = ({ children }) => {
   return (
-    <div className="text-basic flex h-5 w-5 flex-row items-center justify-center rounded-full">
+    <div className="flex h-5 w-5 flex-row items-center justify-center rounded-full text-basic">
       {children}
     </div>
   );
