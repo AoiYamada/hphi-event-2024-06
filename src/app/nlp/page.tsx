@@ -17,7 +17,7 @@ const Page = () => {
       <Tutors />
       <Students />
       <Cooperators />
-      <ContactUs />
+      {/* <ContactUs /> */}
       <RecAsso />
     </div>
   );

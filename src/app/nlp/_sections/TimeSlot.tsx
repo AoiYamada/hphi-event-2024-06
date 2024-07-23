@@ -1,7 +1,7 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import SignUp from "@/components/SignUp";
 
 import { FC } from "react";
+import SignUp from "../_components/SignUp";
 
 const slots = [
   {

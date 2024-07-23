@@ -19,7 +19,7 @@ function Home() {
         <CourseInfo />
         <TimeSlot />
         <Tutors />
-        <Students />
+        <Students className="lg:hidden" />
         <ContactUs />
         <RecAsso />
       </div>

@@ -2,7 +2,7 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Image from "next/image";
 import Banner from "./Banner";
 import KnowMore from "@/components/KnowMore";
-import SignUp from "@/components/SignUp";
+import SignUp from "../../_components/SignUp";
 
 const Hero = () => {
   return (
