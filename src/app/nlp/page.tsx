@@ -15,9 +15,9 @@ const Page = () => {
       <CourseInfo />
       <TimeSlot />
       <Tutors />
-      <Students />
+      <Students className="lg:hidden" />
       <Cooperators />
-      {/* <ContactUs /> */}
+      <ContactUs />
       <RecAsso />
     </div>
   );
