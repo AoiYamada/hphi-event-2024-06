@@ -7,6 +7,7 @@ import Hero from "./_sections/Hero";
 import CourseInfo from "./_sections/CourseInfo";
 import TimeSlot from "./_sections/TimeSlot";
 import Cooperators from "@/components/sections/Cooperators";
+import DownloadLeaflet from "./_sections/DownloadLeaflet";
 
 const Page = () => {
   return (
@@ -14,6 +15,7 @@ const Page = () => {
       <Hero />
       <CourseInfo />
       <TimeSlot />
+      <DownloadLeaflet />
       <Tutors />
       <Students className="lg:hidden" />
       <Cooperators />
