@@ -3,9 +3,9 @@
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { FC } from "react";
-import { Carousel, CarouselProps } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
 import RenderIndicator from "./RenderIndicator";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const students: StorySlideProps[] = [
   {

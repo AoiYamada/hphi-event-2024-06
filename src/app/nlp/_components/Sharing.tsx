@@ -3,7 +3,8 @@
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { FC } from "react";
-import { Carousel, CarouselProps } from "react-responsive-carousel";
+import { Carousel } from "react-responsive-carousel";
+import RenderIndicator from "@/components/RenderIndicator";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const students: StorySlideProps[] = [
@@ -68,38 +69,6 @@ const Sharing: FC<SharingProps> = ({ className }) => {
 };
 
 export default Sharing;
-
-const RenderIndicator: CarouselProps["renderIndicator"] = (
-  onClickHandler,
-  isSelected,
-  index,
-  label,
-) => {
-  if (isSelected) {
-    return (
-      <li
-        className="mx-1 inline-block h-2 w-2 cursor-pointer rounded-full bg-primary"
-        role="active indicator"
-        title={`Selected: ${label} ${index + 1}`}
-        aria-label={`Selected: ${label} ${index + 1}`}
-      />
-    );
-  }
-
-  return (
-    <li
-      className="mx-1 inline-block h-2 w-2 cursor-pointer rounded-full bg-primary/30"
-      onClick={onClickHandler}
-      onKeyDown={onClickHandler}
-      value={index}
-      key={index}
-      role="indicator"
-      tabIndex={0}
-      title={`${label} ${index + 1}`}
-      aria-label={`${label} ${index + 1}`}
-    />
-  );
-};
 
 type StorySlideProps = {
   title: string;

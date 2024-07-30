@@ -1,5 +1,4 @@
 import React from "react";
-import ContactUs from "@/components/sections/ContactUs";
 import RecAsso from "@/components/sections/RecAsso";
 import Students from "@/components/sections/Students";
 import Tutors from "@/components/sections/Tutors";
@@ -8,6 +7,7 @@ import CourseInfo from "./_sections/CourseInfo";
 import TimeSlot from "./_sections/TimeSlot";
 import Cooperators from "@/components/sections/Cooperators";
 import DownloadLeaflet from "./_sections/DownloadLeaflet";
+import ContactUs from "./_sections/ContactUs";
 
 const Page = () => {
   return (

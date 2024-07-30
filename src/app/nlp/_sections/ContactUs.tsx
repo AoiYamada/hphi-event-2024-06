@@ -1,7 +1,7 @@
 import React from "react";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import ContactForm from "@/components/ContactForm";
 import Sharing from "../_components/Sharing";
+import NlpForm from "../_components/NlpForm";
 
 const ContactUs = () => {
   return (
@@ -12,7 +12,7 @@ const ContactUs = () => {
         </h1>
         <div className="flex w-full flex-row items-start justify-center gap-16">
           <Sharing className="hidden max-w-md lg:inline" />
-          <ContactForm className="w-full max-w-lg" />
+          <NlpForm className="w-full max-w-lg" />
         </div>
       </MaxWidthWrapper>
     </section>
