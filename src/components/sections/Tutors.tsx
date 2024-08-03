@@ -7,7 +7,7 @@ import RenderIndicator from "../RenderIndicator";
 
 const tutors: TutorCardProps[] = [
   {
-    name: "CW Leung",
+    name: "Dr. CW Leung",
     title: "首席導師",
     img: {
       src: "/tutors/cw-leung.png",
@@ -40,7 +40,7 @@ const tutors: TutorCardProps[] = [
     ],
     descriptions: [
       "大專講師、心理學家、心理治療首席顧問導師",
-      "PHD Candidate, City U",
+      "PHD, City U",
       "MSocSc, Clinical Psychology, UK",
       "MSocSc, Behavioral Health,. HKU",
       "LLM,Arbi.&Dr. ,HKU",
@@ -80,7 +80,7 @@ const tutors: TutorCardProps[] = [
   },
   {
     name: "Abby Chung 局目子",
-    title: "Professional Hypnotherapist ",
+    title: "Professional Hypnotherapist",
     img: {
       src: "/tutors/abby-chung.webp",
       width: 198,
@@ -104,6 +104,28 @@ const tutors: TutorCardProps[] = [
     descriptions: [
       "「局目子」出生於修行之家，小時曾有幸遇明師，從此修學內、外家武學，哲、道、醫等學說。 此外他是催眠治療師、資訊科技人、畫家、武術家、和專業攝影師等",
       "在修行養生強生方面極有心得，「局目子」著作有 《樂問》、《心靈花園》、 《活生不死》 《酒徒與催眠》》、《催眠師的世界︰催眠． 聯想．異次元》",
+    ],
+  },
+  {
+    name: "Roy W.G Choi",
+    title: "職業心理學家",
+    img: {
+      src: "/tutors/roy-choi.webp",
+      width: 240,
+      height: 370,
+    },
+    qualifications: [
+      "職業心理學碩士 (IOPSY)",
+      "南澳洲大學工商管理學學士 (BBA)",
+      "加拿大催眠師協會 (PBH) 催眠繪畫心理分析培訓導師",
+      "美國工業及組織心理學會會員",
+      "國際醫學及牙醫學催眠協會 (IMDHA) 催眠治療師",
+      "美國國家催眠師公會 (NGH) 催眠治療師",
+      "美國 NFNLP 認可之 NLP 高級執行師 (NFNLP)",
+      "教育大學照顧「SEN青年多元學習需要」社區協助證書",
+    ],
+    descriptions: [
+      'Roy W.G Choi 是職業心理學家，醉心於企業培訓、繪畫心理分析與催眠及音樂治療，從事管理工作超過十五年。暢銷著作《繪畫心理學從畫中一眼看穿人心》， 2019至2021年在播道會兒童之家作藝術培訓導師和教授和培訓SEN導師，為特殊學習需要學生服務。2021年香港機管局邀請演講主題 "職場減壓放鬆"。此外，她亦具備註冊工業及組織心理學家的資格。',
     ],
   },
 ];

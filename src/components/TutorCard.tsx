@@ -27,6 +27,11 @@ const TutorCard: FC<TutorCardProps> = ({
           <h2 className="hidden text-3xl font-semibold text-primary lg:block">
             {name}
           </h2>
+          {title ? (
+            <h3 className="hidden text-xl font-semibold lg:block">{title}</h3>
+          ) : (
+            <></>
+          )}
         </div>
         <div className="flex flex-col gap-2 text-justify">
           <h3 className="text-lg font-semibold lg:hidden">導師介紹</h3>
@@ -41,12 +46,17 @@ const TutorCard: FC<TutorCardProps> = ({
           alt={`${title} ${name}`}
           width={img.width}
           height={img.height}
-          className="mx-auto max-w-sm rounded-lg"
+          className="mx-auto max-w-[280px] rounded-lg"
         />
         <div className="flex flex-col gap-2">
           <h2 className="text-2xl font-semibold text-primary lg:hidden">
             {name}
           </h2>
+          {title ? (
+            <h3 className="text-xl font-semibold lg:hidden">{title}</h3>
+          ) : (
+            <></>
+          )}
           <div className="text-justify">
             <h3 className="text-lg font-semibold">專業資格</h3>
             <ul className="list-outside list-disc pl-4">

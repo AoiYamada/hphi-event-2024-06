@@ -8,6 +8,7 @@ import TimeSlot from "./_sections/TimeSlot";
 import Cooperators from "@/components/sections/Cooperators";
 import DownloadLeaflet from "./_sections/DownloadLeaflet";
 import ContactUs from "./_sections/ContactUs";
+import Consultants from "@/components/sections/Consultants";
 
 const Page = () => {
   return (
@@ -17,6 +18,7 @@ const Page = () => {
       <TimeSlot />
       <DownloadLeaflet />
       <Tutors />
+      <Consultants />
       <Students className="lg:hidden" />
       <Cooperators />
       <ContactUs />
