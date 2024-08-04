@@ -19,9 +19,9 @@ module.exports = {
       instance_var: "NODE_APP_INSTANCE",
       // log_date_format: 'YYYY-MM-DD HH:mm Z',
       error_file:
-        "/home/yamada/workspace/hphi/event-site-2024-06/logs/listcosearch-web",
+        "/home/yamada/workspace/hphi/event-site-2024-06/logs/hphi-promotion-web",
       out_file:
-        "/home/yamada/workspace/hphi/event-site-2024-06/logs/listcosearch-web",
+        "/home/yamada/workspace/hphi/event-site-2024-06/logs/hphi-promotion-web",
       merge_logs: true,
       min_uptime: "10m",
       listen_timeout: 10000,
