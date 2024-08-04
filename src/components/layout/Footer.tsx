@@ -2,8 +2,9 @@ import React, { FC, PropsWithChildren } from "react";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Image from "next/image";
 import Link from "next/link";
-import { WhatsApp } from "@/components/icons/WhatsApp";
+import { Facebook } from "@/components/icons/Facebook";
 import { Instagram } from "@/components/icons/Instagram";
+import { WhatsApp } from "@/components/icons/WhatsApp";
 import { Youtube } from "@/components/icons/Youtube";
 import { Mail, Phone } from "lucide-react";
 
@@ -53,6 +54,11 @@ const contacts: {
     icon: <Youtube />,
     name: "潛意識達人",
     link: "https://www.youtube.com/@know.the.inside",
+  },
+  {
+    icon: <Facebook />,
+    name: "專業心理治療及催眠應用中心",
+    link: "https://www.facebook.com/hphi.health",
   },
   {
     icon: <Mail />,
