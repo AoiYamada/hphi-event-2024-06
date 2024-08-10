@@ -67,12 +67,12 @@ const contacts: {
   },
   {
     icon: <Phone />,
-    name: "35007168(熱線)",
+    name: "35007168 (熱線)",
     link: "tel:35007168",
   },
   {
     icon: <Phone />,
-    name: "26261828(催眠課程專線)",
+    name: "26261828 (催眠課程專線)",
     link: "tel:35007168",
   },
 ];
