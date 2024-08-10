@@ -60,13 +60,16 @@ jobs:
           cmd: install --frozen-lockfile --force --prod
       - name: Prepare files
         run: |
+          mkdir deliver
           sudo mv node_modules .next ecosystem.config.js public deliver
       # https://github.com/marketplace/actions/rsync-deployments-action
       - name: Deploy
         uses: burnett01/rsync-deployments@7.0.1
         with:
           # https://stackoverflow.com/questions/13778889/rsync-difference-between-size-only-and-ignore-times
-          switches: -avzr --checksum --delete --exclude=assets --exclude=volumes --exclude=.env --exclude=.credentials
+          switches: -avzr --checksum
+          # In case want to delete all files in the remote directory that are not in the local directory except for public and .env
+          # switches: -avzr --checksum --delete --exclude=public --exclude=.env
           path: deliver/
           remote_path: ~/workspace/hphi/event-site-2024-06
           remote_host: ${{ secrets.DEPLOY_HOST }}
