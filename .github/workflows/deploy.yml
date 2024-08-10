@@ -1,0 +1,74 @@
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [20.11.1]
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        # https://github.com/actions/setup-node/blob/main/docs/advanced-usage.md#caching-packages-dependencies
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "yarn"
+      - name: Build
+        run: |
+          yarn install --frozen-lockfile
+          yarn build
+      # https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts
+      - name: Upload built results
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist-for-node-${{ matrix.node-version }}
+          path: .next/
+          # retention-days: 1
+
+  deploy:
+    needs: [build]
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [20.11.1]
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Download dist
+        uses: actions/download-artifact@v4
+        with:
+          name: dist-for-node-${{ matrix.node-version }}
+          path: dist/
+      - name: Install deploy dependencies
+        uses: Borales/actions-yarn@v4
+        with:
+          cmd: install --frozen-lockfile --force --prod
+      - name: Prepare files
+        run: |
+          sudo mv node_modules .next ecosystem.config.js public deliver
+      # https://github.com/marketplace/actions/rsync-deployments-action
+      - name: Deploy
+        uses: burnett01/rsync-deployments@7.0.1
+        with:
+          # https://stackoverflow.com/questions/13778889/rsync-difference-between-size-only-and-ignore-times
+          switches: -avzr --checksum --delete --exclude=assets --exclude=volumes --exclude=.env --exclude=.credentials
+          path: deliver/
+          remote_path: ~/workspace/hphi/event-site-2024-06
+          remote_host: ${{ secrets.DEPLOY_HOST }}
+          remote_user: ${{ secrets.DEPLOY_USER }}
+          remote_key: ${{ secrets.DEPLOY_KEY }}
