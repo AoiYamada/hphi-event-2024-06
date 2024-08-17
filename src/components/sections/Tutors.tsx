@@ -10,9 +10,9 @@ const tutors: TutorCardProps[] = [
     name: "Dr. CW Leung",
     title: "首席導師",
     img: {
-      src: "/tutors/cw-leung.png",
-      width: 776,
-      height: 546,
+      src: "/tutors/cw-leung-2.jpeg",
+      width: 755,
+      height: 566,
     },
     qualifications: [
       "麻省理工大學︰設計思維、學習管理及領導證書",

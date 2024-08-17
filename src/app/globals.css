@@ -71,3 +71,12 @@ input:-internal-autofill-selected {
     mask-image: linear-gradient(to right, transparent 5%, black 50%);
   }
 }
+
+blockquote {
+  display: block;
+  padding-block-start: 1em;
+  padding-block-end: 1em;
+  padding-inline-start: 40px;
+  padding-inline-end: 40px;
+  unicode-bidi: isolate;
+}

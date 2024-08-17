@@ -3,12 +3,17 @@
 import React, { FC } from "react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
-type KnowMoreProps = {
+type KnowMoreCourseInfoProps = {
+  href: string;
   className?: string;
 };
 
-const KnowMore: FC<KnowMoreProps> = ({ className }) => {
+const KnowMoreCourseInfo: FC<KnowMoreCourseInfoProps> = ({
+  href,
+  className,
+}) => {
   return (
     <Button
       className={cn(
@@ -16,15 +21,12 @@ const KnowMore: FC<KnowMoreProps> = ({ className }) => {
         className,
       )}
       variant="outline"
-      onClick={() => {
-        document.getElementById("course-info")?.scrollIntoView({
-          behavior: "smooth",
-        });
-      }}
     >
-      <span>了解更多</span>
+      <Link href={href} target="_blank" className="mx-auto">
+        <span>了解更多</span>
+      </Link>
     </Button>
   );
 };
 
-export default KnowMore;
+export default KnowMoreCourseInfo;

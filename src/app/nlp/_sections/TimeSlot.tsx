@@ -2,6 +2,7 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 
 import { FC } from "react";
 import SignUp from "../_components/SignUp";
+import KnowMoreCourseInfo from "@/components/KnowMoreCourseInfo";
 
 const slots = [
   {
@@ -29,7 +30,7 @@ const slots = [
     time: ["星期三"],
     dates: [
       "10月9日 (19:00-22:30) 3.5 小時",
-      "10月11日 (假期) (10:00-19:30) 9.5 小時",
+      "10月11日 (10:00-19:30) 9.5 小時",
       "10月16日 (19:00-22:30) 3.5 小時",
       "10月23日 (19:00-22:30) 3.5 小時",
       "10月30日 (19:00-22:30) 3.5 小時",
@@ -101,7 +102,11 @@ const ClassCard: FC<ClassCardProps> = ({ title, time, dates }) => {
           </div>
         </div>
       </div>
-      <SignUp className="mt-8" />
+      <KnowMoreCourseInfo
+        href="https://hknlp.info/product/%e8%ba%ab%e5%bf%83%e8%aa%9e%e8%a8%80%e7%a8%8b%e5%bc%8f%e5%ad%b8%e4%ba%ba%e9%9a%9b%e4%ba%a4%e5%be%80%e5%8f%8a%e5%95%86%e6%a5%ad%e7%ae%a1%e7%90%86%e6%8a%80%e5%b7%a7%e8%ad%89%e6%9b%b8/"
+        className="mt-8 w-[116px]"
+      />
+      <SignUp />
     </div>
   );
 };

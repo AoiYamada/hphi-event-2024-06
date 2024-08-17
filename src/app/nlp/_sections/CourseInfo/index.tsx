@@ -12,11 +12,16 @@ const CourseInfo = () => {
     <section id="course-info" className="w-full">
       <MaxWidthWrapper className="flex flex-col items-center justify-center text-neutral">
         <div className="flex flex-col items-center justify-center gap-12 rounded-lg border border-neutral/10 bg-basic/50 px-4 pb-16 pt-12 shadow-md md:px-12">
-          <h1 className="flex flex-col items-center justify-center text-3xl font-semibold lg:flex-row">
-            <span className="shrink-0">身心語言程式學</span>
-            <span className="shrink-0">人際交往及商業管理</span>
-            <span className="shrink-0">技巧證書 QF Level 3</span>
-          </h1>
+          <div className="flex flex-col gap-2">
+            <h1 className="flex flex-col items-center justify-center text-3xl font-semibold lg:flex-row">
+              <span className="shrink-0">身心語言程式學</span>
+              <span className="shrink-0">人際交往及商業管理</span>
+              <span className="shrink-0">技巧證書 QF Level 3</span>
+            </h1>
+            <h2 className="flex flex-col items-center justify-center text-xl font-semibold lg:flex-row">
+              持續進修基金課程
+            </h2>
+          </div>
           <div className="flex w-full flex-col items-center gap-4">
             <table className="border-collapse border border-solid border-neutral text-left">
               <tbody>
@@ -65,12 +70,22 @@ const CourseInfo = () => {
           <div className="relative w-full">
             <div className="flex flex-col items-start justify-start gap-16 lg:flex-row">
               <Intro className="lg:w-3/5" />
+              <div className="lg:hidden">
+                <video controls>
+                  <source src="/nlp-intro.mp4" type="video/mp4" />
+                </video>
+              </div>
               <div className="flex w-full flex-col gap-12 md:flex-row lg:w-2/5 lg:shrink-0 lg:flex-col">
                 <Aim className="w-full md:w-1/2 lg:w-full" />
                 <Syllabus className="w-full md:w-1/2 md:shrink-0 lg:w-full" />
               </div>
             </div>
             <CardBg />
+          </div>
+          <div className="relative hidden w-full lg:block">
+            <video controls>
+              <source src="/nlp-intro.mp4" type="video/mp4" />
+            </video>
           </div>
           <div className="relative w-full">
             <div className="flex w-full flex-col items-start justify-start gap-16 md:flex-row lg:gap-16">
