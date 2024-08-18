@@ -5,13 +5,12 @@ import KnowMoreCourseInfo from "../KnowMoreCourseInfo";
 
 const slots = [
   {
-    title: "八月暑期班",
+    title: "8月暑期班",
     time: ["星期六、日", "10:00 - 19:00"],
     dates: ["8月4日", "8月10日", "8月11日", "8月18日", "8月25日", "9月7日"],
-    tutors: ["Dr. CW Leung (催眠博士、臨床心理學碩士、商業心理學家)"],
   },
   {
-    title: "10月 - 11月常規假日班",
+    title: "10-11月常規假日班",
     time: ["星期六、日", "10:00 - 19:00"],
     dates: [
       "10月11日",
@@ -20,21 +19,6 @@ const slots = [
       "10月26日",
       "10月27日",
       "11月3日",
-    ],
-    tutors: ["Dr. CW Leung (催眠博士、臨床心理學碩士、商業心理學家)"],
-  },
-  {
-    title: "9月-10月特別班",
-    time: ["星期六、日、假日"],
-    dates: [
-      "9月21日 (10:00-19:00) 9小時",
-      "9月22日 (11:00-18:00) 7小時",
-      "9月28日 (11:00-18:00) 7小時",
-      "10月1日 (10:00-19:30) 9.5小時",
-    ],
-    tutors: [
-      "Mr. Abby Chung (前大專講師、NLP應用、跨學科電腦專家)",
-      "Dr, CW Leung (催眠博士、臨床心理學碩士、仲裁調解法律碩士、英國ABP商業心理學家)",
     ],
   },
 ];
@@ -63,7 +47,7 @@ type ClassCardProps = {
   title: string;
   time: string[];
   dates: string[];
-  tutors: string[];
+  tutors?: string[];
 };
 
 const ClassCard: FC<ClassCardProps> = ({ title, time, dates, tutors }) => {
@@ -92,14 +76,16 @@ const ClassCard: FC<ClassCardProps> = ({ title, time, dates, tutors }) => {
             ))}
           </div>
         </div>
-        <div className="mt-4 flex flex-col">
-          <div className="shrink-0">任教導師：</div>
-          <div>
-            {tutors.map((t, i) => (
-              <div key={i}>{t}</div>
-            ))}
+        {tutors && tutors.length > 0 && (
+          <div className="mt-4 flex flex-col">
+            <div className="shrink-0">任教導師：</div>
+            <div>
+              {tutors.map((t, i) => (
+                <div key={i}>{t}</div>
+              ))}
+            </div>
           </div>
-        </div>
+        )}
       </div>
       <KnowMoreCourseInfo
         href="https://www.hk-hphi.com/%E7%BE%8E%E5%9C%8B%E8%A8%BB%E5%86%8A%E5%82%AC%E7%9C%A0%E6%B2%BB%E7%99%82%E5%B8%AB%E8%AA%B2%E7%A8%8B-abh-ngh"

@@ -70,22 +70,12 @@ const CourseInfo = () => {
           <div className="relative w-full">
             <div className="flex flex-col items-start justify-start gap-16 lg:flex-row">
               <Intro className="lg:w-3/5" />
-              <div className="lg:hidden">
-                <video controls>
-                  <source src="/nlp-intro.mp4" type="video/mp4" />
-                </video>
-              </div>
               <div className="flex w-full flex-col gap-12 md:flex-row lg:w-2/5 lg:shrink-0 lg:flex-col">
                 <Aim className="w-full md:w-1/2 lg:w-full" />
                 <Syllabus className="w-full md:w-1/2 md:shrink-0 lg:w-full" />
               </div>
             </div>
             <CardBg />
-          </div>
-          <div className="relative hidden w-full lg:block">
-            <video controls>
-              <source src="/nlp-intro.mp4" type="video/mp4" />
-            </video>
           </div>
           <div className="relative w-full">
             <div className="flex w-full flex-col items-start justify-start gap-16 md:flex-row lg:gap-16">
