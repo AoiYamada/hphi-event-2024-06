@@ -9,12 +9,14 @@ import Cooperators from "@/components/sections/Cooperators";
 import DownloadLeaflet from "./_sections/DownloadLeaflet";
 import ContactUs from "./_sections/ContactUs";
 import Consultants from "@/components/sections/Consultants";
+import Interviews from "./_sections/Interviews";
 
 const Page = () => {
   return (
     <div className="w-full">
       <Hero />
       <CourseInfo />
+      <Interviews />
       <TimeSlot />
       <DownloadLeaflet />
       <Tutors />
