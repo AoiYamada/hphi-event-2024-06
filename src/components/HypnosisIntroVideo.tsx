@@ -1,20 +1,16 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import React from "react";
 
-const Interviews = () => {
+const HypnosisIntroVideo = () => {
   return (
-    <section id="interviews" className="block w-full">
+    <section id="hypnosis_intro_video" className="block w-full">
       <MaxWidthWrapper className="flex flex-col items-center justify-center gap-12">
-        <h1 className="flex flex-col items-center justify-center text-3xl font-semibold sm:text-4xl lg:text-5xl">
-          <span>其他訪問：</span>
-          <span>神經語言程式學 (NLP) 有甚麼用？專業資格？</span>
-        </h1>
         <div className="flex flex-col items-center justify-center gap-12">
           <iframe
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/NptrRI4vrUQ?si=pUb9VT6gOrvVu32w"
-            title="神經語言程式學 (NLP) 有甚麼用？"
+            src="https://www.youtube.com/embed/nudgfiJsefg?si=6pkJ_0_rycc_HbVo"
+            title="3招練習自我催眠"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
@@ -26,4 +22,4 @@ const Interviews = () => {
   );
 };
 
-export default Interviews;
+export default HypnosisIntroVideo;

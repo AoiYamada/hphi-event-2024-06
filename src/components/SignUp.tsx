@@ -13,7 +13,7 @@ const SignUp: FC<SignUpProps> = ({ className }) => {
   return (
     <Button
       className={cn(
-        "text-basic flex flex-row justify-center bg-primary font-normal",
+        "flex flex-row justify-center bg-primary font-normal text-basic",
         className,
       )}
       onClick={() => {

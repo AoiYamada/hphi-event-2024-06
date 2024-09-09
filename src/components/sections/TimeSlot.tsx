@@ -2,13 +2,15 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import SignUp from "../SignUp";
 import { FC } from "react";
 import KnowMoreCourseInfo from "../KnowMoreCourseInfo";
+import Closed from "../Closed";
 
-const slots = [
+const slots: ClassCardProps[] = [
   {
     title: "8月暑期班",
     time: ["星期六、日", "10:00 - 19:00"],
     dates: ["8月4日", "8月10日", "8月11日", "8月18日", "8月25日", "9月7日"],
     tutors: ["Dr. CW Leung (催眠博士、臨床心理學碩士、商業心理學家)"],
+    closed: true,
   },
   {
     title: "10-11月常規假日班",
@@ -22,6 +24,7 @@ const slots = [
       "11月3日",
     ],
     tutors: ["Dr. CW Leung (催眠博士、臨床心理學碩士、商業心理學家)"],
+    closed: false,
   },
 ];
 
@@ -50,9 +53,16 @@ type ClassCardProps = {
   time: string[];
   dates: string[];
   tutors?: string[];
+  closed: boolean;
 };
 
-const ClassCard: FC<ClassCardProps> = ({ title, time, dates, tutors }) => {
+const ClassCard: FC<ClassCardProps> = ({
+  title,
+  time,
+  dates,
+  tutors,
+  closed,
+}) => {
   return (
     <div className="flex flex-col items-center justify-start gap-4 rounded-lg border border-neutral/10 bg-basic/50 p-12 shadow-md">
       <h2 className="text-2xl font-semibold text-primary">{title}</h2>
@@ -93,7 +103,7 @@ const ClassCard: FC<ClassCardProps> = ({ title, time, dates, tutors }) => {
         href="https://www.hk-hphi.com/%E7%BE%8E%E5%9C%8B%E8%A8%BB%E5%86%8A%E5%82%AC%E7%9C%A0%E6%B2%BB%E7%99%82%E5%B8%AB%E8%AA%B2%E7%A8%8B-abh-ngh"
         className="mt-8 w-[116px]"
       />
-      <SignUp />
+      {closed ? <Closed /> : <SignUp />}
     </div>
   );
 };

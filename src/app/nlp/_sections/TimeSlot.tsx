@@ -3,8 +3,9 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { FC } from "react";
 import SignUp from "../_components/SignUp";
 import KnowMoreCourseInfo from "@/components/KnowMoreCourseInfo";
+import Closed from "@/components/Closed";
 
-const slots = [
+const slots: ClassCardProps[] = [
   {
     title: "9月班",
     time: ["星期日"],
@@ -18,6 +19,7 @@ const slots = [
       "Dr. CW Leung (催眠博士、臨床心理學碩士、商業心理學家)",
       "Mr. Abby Chung (前大專講師、NLP應用、跨學科電腦專家)",
     ],
+    closed: true,
   },
   {
     title: "9-10月特別班",
@@ -32,6 +34,7 @@ const slots = [
       "Mr. Abby Chung (前大專講師、NLP應用、跨學科電腦專家)",
       "Dr. CW Leung (催眠博士、臨床心理學碩士、仲裁調解法律碩士、英國ABP商業心理學家)",
     ],
+    closed: true,
   },
   {
     title: "10月班",
@@ -43,6 +46,7 @@ const slots = [
       "10月20日 (10:00-19:30) 9.5 小時",
     ],
     tutors: ["Dr. CW Leung (催眠博士、臨床心理學碩士、商業心理學家)"],
+    closed: true,
   },
   {
     title: "閒日班",
@@ -57,6 +61,7 @@ const slots = [
       "11月13日 (19:00-22:30) 3.5 小時",
     ],
     tutors: ["Dr. CW Leung (催眠博士、臨床心理學碩士、商業心理學家)"],
+    closed: true,
   },
   {
     title: "假日班",
@@ -71,6 +76,7 @@ const slots = [
       "Dr. CW Leung (催眠博士、臨床心理學碩士、商業心理學家)",
       "Mr. Abby Chung (前大專講師、NLP應用、跨學科電腦專家)",
     ],
+    closed: false,
   },
 ];
 
@@ -98,9 +104,16 @@ type ClassCardProps = {
   time: string[];
   dates: string[];
   tutors?: string[];
+  closed: boolean;
 };
 
-const ClassCard: FC<ClassCardProps> = ({ title, time, dates, tutors }) => {
+const ClassCard: FC<ClassCardProps> = ({
+  title,
+  time,
+  dates,
+  tutors,
+  closed,
+}) => {
   return (
     <div className="flex flex-col items-center justify-start gap-4 rounded-lg border border-neutral/10 bg-basic/50 p-12 shadow-md">
       <h2 className="text-2xl font-semibold text-primary">{title}</h2>
@@ -141,7 +154,7 @@ const ClassCard: FC<ClassCardProps> = ({ title, time, dates, tutors }) => {
         href="https://hknlp.info/product/%e8%ba%ab%e5%bf%83%e8%aa%9e%e8%a8%80%e7%a8%8b%e5%bc%8f%e5%ad%b8%e4%ba%ba%e9%9a%9b%e4%ba%a4%e5%be%80%e5%8f%8a%e5%95%86%e6%a5%ad%e7%ae%a1%e7%90%86%e6%8a%80%e5%b7%a7%e8%ad%89%e6%9b%b8/"
         className="mt-8 w-[116px]"
       />
-      <SignUp />
+      {closed ? <Closed /> : <SignUp />}
     </div>
   );
 };

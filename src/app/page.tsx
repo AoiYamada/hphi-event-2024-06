@@ -9,6 +9,7 @@ import RecAsso from "../components/sections/RecAsso";
 import TimeSlot from "../components/sections/TimeSlot";
 import Students from "../components/sections/Students";
 import Tutors from "../components/sections/Tutors";
+import HypnosisIntroVideo from "@/components/HypnosisIntroVideo";
 
 function Home() {
   return (
@@ -17,6 +18,7 @@ function Home() {
       <div className="w-full pb-16">
         <Hero />
         <CourseInfo />
+        <HypnosisIntroVideo />
         <TimeSlot />
         <Tutors />
         <Students className="lg:hidden" />
