@@ -38,6 +38,7 @@ jobs:
         with:
           name: .next-${{ matrix.node-version }}
           path: .next/
+          include-hidden-files: true
           # retention-days: 1
 
   deploy:
@@ -61,7 +62,7 @@ jobs:
           name: .next-${{ matrix.node-version }}
           path: .next/
       - name: Install deploy dependencies
-        uses: Borales/actions-yarn@v4
+        uses: Borales/actions-yarn@v5
         with:
           cmd: install --frozen-lockfile --force --prod
       - name: Prepare files
