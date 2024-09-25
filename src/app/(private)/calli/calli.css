@@ -76,6 +76,7 @@ p {
 
 .control-form input[type="number"] {
   width: 100px;
+  padding: 4px;
 }
 
 .control-form button {
