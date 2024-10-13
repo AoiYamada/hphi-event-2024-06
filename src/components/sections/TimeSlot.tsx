@@ -53,12 +53,12 @@ const TimeSlot = () => {
         <div className="w-full text-left">
           <p>* 每個課程均設立助教跟進學員進度。</p>
           <p>
-            本中心另設企業培訓，詳情請以 Whatsapp 聯絡：{" "}
+            本中心另設企業培訓或如有其他課程查詢，詳情請按此：{" "}
             <Link
-              href="https://wa.me/85290469438"
+              href="https://wa.me/85293098317"
               className="text-primary underline underline-offset-4"
             >
-              +852 9046 9438
+              +852 9309 8317
             </Link>
           </p>
           <p>

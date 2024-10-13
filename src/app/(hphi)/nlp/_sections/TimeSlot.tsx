@@ -95,7 +95,7 @@ const TimeSlot = () => {
         </div>
         <div className="w-full text-left">
           <p>
-            本中心另設企業培訓，詳情請以 Whatsapp 聯絡：{" "}
+            本中心另設企業培訓或如有其他課程查詢，詳情請按此：{" "}
             <Link
               href="https://wa.me/85290469438"
               className="text-primary underline underline-offset-4"
