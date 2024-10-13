@@ -4,6 +4,7 @@ import { FC } from "react";
 import SignUp from "../_components/SignUp";
 import KnowMoreCourseInfo from "@/components/KnowMoreCourseInfo";
 import Closed from "@/components/Closed";
+import Link from "next/link";
 
 const slots: ClassCardProps[] = [
   {
@@ -91,6 +92,27 @@ const TimeSlot = () => {
           {slots.map((slot, index) => (
             <ClassCard key={index} {...slot} />
           ))}
+        </div>
+        <div className="w-full text-left">
+          <p>
+            本中心另設企業培訓，詳情請以 Whatsapp 聯絡：{" "}
+            <Link
+              href="https://wa.me/85290469438"
+              className="text-primary underline underline-offset-4"
+            >
+              +852 9046 9438
+            </Link>
+          </p>
+          <p>
+            如想報讀本中心舉辦之催眠五證書課程，
+            <Link
+              href="/"
+              className="text-primary underline underline-offset-4"
+            >
+              請按此
+            </Link>
+            。
+          </p>
         </div>
       </MaxWidthWrapper>
     </section>

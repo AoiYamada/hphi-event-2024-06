@@ -18,8 +18,12 @@ const CourseInfo = () => {
               <span className="shrink-0">人際交往及商業管理</span>
               <span className="shrink-0">技巧證書 QF Level 3</span>
             </h1>
-            <h2 className="flex flex-col items-center justify-center text-xl font-semibold lg:flex-row">
-              持續進修基金課程
+            <h2 className="flex flex-col items-center justify-center text-xl font-semibold lg:flex-row lg:gap-2">
+              <span className="shrink-0">持續進修基金課程</span>
+              <span className="shrink-0">CEF Course Code: 33C16082A</span>
+            </h2>
+            <h2 className="flex flex-col items-center justify-center text-xl font-semibold lg:flex-row lg:gap-2">
+              全港首個博士級商業心理學家任教之課程
             </h2>
           </div>
           <div className="flex w-full flex-col items-center gap-4">

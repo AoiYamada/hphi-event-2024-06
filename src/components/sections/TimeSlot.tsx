@@ -3,6 +3,7 @@ import SignUp from "../SignUp";
 import { FC } from "react";
 import KnowMoreCourseInfo from "../KnowMoreCourseInfo";
 import Closed from "../Closed";
+import Link from "next/link";
 
 const slots: ClassCardProps[] = [
   {
@@ -49,7 +50,28 @@ const TimeSlot = () => {
             <ClassCard key={index} {...slot} />
           ))}
         </div>
-        <div>* 每個課程均設立助教跟進學員進度。</div>
+        <div className="w-full text-left">
+          <p>* 每個課程均設立助教跟進學員進度。</p>
+          <p>
+            本中心另設企業培訓，詳情請以 Whatsapp 聯絡：{" "}
+            <Link
+              href="https://wa.me/85290469438"
+              className="text-primary underline underline-offset-4"
+            >
+              +852 9046 9438
+            </Link>
+          </p>
+          <p>
+            如想報讀本中心舉辦之 NLP 可持續進修基金課程，
+            <Link
+              href="/nlp"
+              className="text-primary underline underline-offset-4"
+            >
+              請按此
+            </Link>
+            。
+          </p>
+        </div>
       </MaxWidthWrapper>
     </section>
   );
