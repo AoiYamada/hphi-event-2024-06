@@ -8,21 +8,6 @@ import Link from "next/link";
 
 const slots: ClassCardProps[] = [
   {
-    title: "9-10月特別班",
-    time: ["星期六、日、假日"],
-    dates: [
-      "9月21日 (10:00-19:00) 9小時",
-      "9月22日 (11:00-18:00) 7小時",
-      "9月28日 (11:00-18:00) 7小時",
-      "10月1日 (10:00-19:30) 9.5小時",
-    ],
-    tutors: [
-      "Mr. Abby Chung (前大專講師、NLP應用、跨學科電腦專家)",
-      "Dr. CW Leung (催眠博士、臨床心理學碩士、仲裁調解法律碩士、英國ABP商業心理學家)",
-    ],
-    closed: true,
-  },
-  {
     title: "10月班",
     time: ["星期日"],
     dates: [
@@ -62,7 +47,7 @@ const slots: ClassCardProps[] = [
       "Dr. CW Leung (催眠博士、臨床心理學碩士、商業心理學家)",
       "Mr. Abby Chung (前大專講師、NLP應用、跨學科電腦專家)",
     ],
-    closed: false,
+    closed: true,
   },
   {
     title: "假日班",
@@ -72,6 +57,21 @@ const slots: ClassCardProps[] = [
       "12月22日 (11:00-18:00) 7 小時",
       "12月29日 (11:00-18:00) 7 小時",
       "2025年1月5日 (10:00-19:30) 9.5 小時",
+    ],
+    tutors: [
+      "Dr. CW Leung (催眠博士、臨床心理學碩士、商業心理學家)",
+      "Mr. Abby Chung (前大專講師、NLP應用、跨學科電腦專家)",
+    ],
+    closed: false,
+  },
+  {
+    title: "假日班",
+    time: ["星期日"],
+    dates: [
+      "2025年1月12日 (10:00-19:00) 9 小時",
+      "2025年1月19日 (11:00-18:00) 7 小時",
+      "2025年2月2日 (11:00-18:00) 7 小時",
+      "2025年2月9日 (10:00-19:30) 9.5 小時",
     ],
     tutors: [
       "Dr. CW Leung (催眠博士、臨床心理學碩士、商業心理學家)",
@@ -172,10 +172,10 @@ const ClassCard: FC<ClassCardProps> = ({
           </div>
         )}
       </div>
-      <KnowMoreCourseInfo
+      {/* <KnowMoreCourseInfo
         href="https://hknlp.info/product/%e8%ba%ab%e5%bf%83%e8%aa%9e%e8%a8%80%e7%a8%8b%e5%bc%8f%e5%ad%b8%e4%ba%ba%e9%9a%9b%e4%ba%a4%e5%be%80%e5%8f%8a%e5%95%86%e6%a5%ad%e7%ae%a1%e7%90%86%e6%8a%80%e5%b7%a7%e8%ad%89%e6%9b%b8/"
         className="mt-8 w-[116px]"
-      />
+      /> */}
       {closed ? <Closed /> : <SignUp />}
     </div>
   );

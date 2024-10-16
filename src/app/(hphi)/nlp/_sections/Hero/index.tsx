@@ -10,7 +10,8 @@ const Hero = () => {
       <MaxWidthWrapper className="flex flex-col gap-8">
         <blockquote className="relative w-full text-primary before:absolute before:-left-3 before:-top-5 before:font-serif before:text-7xl before:italic before:text-primary/30 before:content-['“'] after:absolute after:-right-3 after:-top-5 after:font-serif after:text-7xl after:italic after:text-primary/30 after:content-['”']">
           <p className="text-justify text-2xl font-bold leading-relaxed lg:text-4xl lg:leading-relaxed">
-            當有十人在房間裡，九個不信任你，但只要有一人開始相信你，你的世界便從此而改變。
+            60 小時的努力 (30 小時面授 + 30
+            小時網課)，取得一個國際認證資格。無比的毅力，開創新的事業。
           </p>
         </blockquote>
         <div className="relative flex flex-row items-center justify-center gap-8">
