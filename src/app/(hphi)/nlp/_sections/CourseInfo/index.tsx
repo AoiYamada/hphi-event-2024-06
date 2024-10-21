@@ -20,10 +20,11 @@ const CourseInfo = () => {
             </h1>
             <h2 className="flex flex-col items-center justify-center text-xl font-semibold lg:flex-row lg:gap-2">
               <span className="shrink-0">持續進修基金課程</span>
-              <span className="shrink-0">CEF Course Code: 33C16082A</span>
             </h2>
             <h2 className="flex flex-col items-center justify-center text-xl font-semibold lg:flex-row lg:gap-2">
-              全港首個博士級商業心理學家任教之課程
+              <span className="shrink-0">
+                全港首個博士級商業心理學家任教之課程
+              </span>
             </h2>
           </div>
           <div className="flex w-full flex-col items-center gap-4">
@@ -39,6 +40,40 @@ const CourseInfo = () => {
                       Interpersonal Communication and Business Management Skills
                     </p>
                     <p>身心語言程式學人際交往及商業管理技巧證書</p>
+                  </td>
+                </tr>
+                <tr>
+                  <th className="border border-solid border-neutral p-2 align-top text-primary">
+                    <p>課程資歷架構級別</p>
+                  </th>
+                  <td className="max-w-lg border border-solid border-neutral p-2 align-top">
+                    <p>第三級別 (QF Level 3)</p>
+                  </td>
+                </tr>
+                <tr>
+                  <th className="border border-solid border-neutral p-2 align-top text-primary">
+                    <p>資歷架構註冊編號</p>
+                  </th>
+                  <td className="max-w-lg border border-solid border-neutral p-2 align-top">
+                    <p>24/000659/L3</p>
+                    <p>01/08/2024 - 31/07/2026</p>
+                  </td>
+                </tr>
+                <tr>
+                  <th className="border border-solid border-neutral p-2 align-top text-primary">
+                    <p>持續進修基金課程編號</p>
+                    <p>CEF Course Code</p>
+                  </th>
+                  <td className="max-w-lg border border-solid border-neutral p-2 align-top">
+                    <p>33C16082A</p>
+                  </td>
+                </tr>
+                <tr>
+                  <th className="border border-solid border-neutral p-2 align-top text-primary">
+                    <p>Institution Code</p>
+                  </th>
+                  <td className="max-w-lg border border-solid border-neutral p-2 align-top">
+                    <p>872</p>
                   </td>
                 </tr>
                 <tr>
