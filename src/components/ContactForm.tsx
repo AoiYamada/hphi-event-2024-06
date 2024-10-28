@@ -15,6 +15,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { cn } from "@/lib/utils";
+import * as pixel from "@/lib/f-pixel";
 
 const formSchema = z.object({
   name: z
@@ -69,6 +70,8 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
     try {
+      pixel.event("Lead");
+
       await fetch("/api/contact-us", {
         method: "POST",
         headers: {

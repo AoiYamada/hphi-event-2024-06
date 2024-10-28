@@ -1,4 +1,3 @@
-import React, { FC, PropsWithChildren } from "react";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,6 +6,7 @@ import { Instagram } from "@/components/icons/Instagram";
 import { WhatsApp } from "@/components/icons/WhatsApp";
 import { Youtube } from "@/components/icons/Youtube";
 import { Mail, Phone } from "lucide-react";
+import ContactItem, { Contact } from "./ContactItem";
 
 const courses: {
   name: string;
@@ -30,11 +30,7 @@ const courses: {
   },
 ];
 
-const contacts: {
-  icon: JSX.Element;
-  name: string;
-  link: string;
-}[] = [
+const contacts: Contact[] = [
   {
     icon: <WhatsApp />,
     name: "+852 9046 9438",
@@ -107,15 +103,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold">聯絡我們</h3>
             <ul className="text-md flex flex-col items-start justify-start gap-1">
               {contacts.map((contact) => (
-                <li
-                  key={contact.name}
-                  className="flex flex-row items-center justify-start gap-3"
-                >
-                  <IconWrapper>{contact.icon}</IconWrapper>
-                  <Link href={contact.link} target="_blank">
-                    {contact.name}
-                  </Link>
-                </li>
+                <ContactItem key={contact.name} contact={contact} />
               ))}
             </ul>
           </div>
@@ -132,11 +120,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-const IconWrapper: FC<PropsWithChildren> = ({ children }) => {
-  return (
-    <div className="flex h-5 w-5 flex-row items-center justify-center rounded-full text-basic">
-      {children}
-    </div>
-  );
-};

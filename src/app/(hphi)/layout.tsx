@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "../globals.css";
 import { cn } from "@/lib/utils";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import FacebookPixel from "@/components/FacebookPixel";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,9 +20,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body id="root" className={cn(inter.className)}>
+    <html lang="zh-HK">
+      <body id="root" className={cn(inter.className)} suppressHydrationWarning>
         {children}
+        <FacebookPixel />
       </body>
       <GoogleAnalytics gaId="AW-16658005021" />
     </html>
