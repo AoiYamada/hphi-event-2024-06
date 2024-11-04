@@ -58,6 +58,7 @@ type ContactFormProps = {
 
 const ContactForm: FC<ContactFormProps> = ({ className }) => {
   const { toast } = useToast();
+  const [isLoading, setIsLoading] = React.useState(false);
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -69,6 +70,8 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
   });
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
+    setIsLoading(true);
+
     try {
       pixel.event("Lead");
 
@@ -90,6 +93,8 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
         description: "請稍後再試",
         variant: "destructive",
       });
+    } finally {
+      setIsLoading(false);
     }
   }
 
@@ -176,9 +181,12 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
         />
         <button
           type="submit"
-          className="mt-6 w-full rounded-md bg-primary p-2 text-basic"
+          className={cn("mt-6 w-full rounded-md bg-primary p-2 text-basic", {
+            "opacity-50": isLoading,
+          })}
+          disabled={isLoading}
         >
-          提交
+          {!isLoading ? "提交" : "提交中..."}
         </button>
       </form>
     </Form>
