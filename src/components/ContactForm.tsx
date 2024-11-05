@@ -83,6 +83,8 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
         body: JSON.stringify(values),
       });
 
+      form.reset();
+
       toast({
         title: "資料提交成功",
         className: "bg-primary border-none text-basic",
@@ -94,6 +96,8 @@ const ContactForm: FC<ContactFormProps> = ({ className }) => {
         variant: "destructive",
       });
     } finally {
+      // wait for 2 seconds before re-enable the submit button
+      await new Promise((resolve) => setTimeout(resolve, 3000));
       setIsLoading(false);
     }
   }
