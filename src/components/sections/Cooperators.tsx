@@ -1,9 +1,10 @@
 import Image from "next/image";
 import MaxWidthWrapper from "../MaxWidthWrapper";
+import AnimatedSection from "../AnimatedSection";
 
 const Cooperators = () => {
   return (
-    <section className="w-full" id="cooperators">
+    <AnimatedSection className="w-full" id="cooperators">
       <MaxWidthWrapper className="flex flex-col items-center justify-center gap-12">
         <h1 className="flex flex-col items-center justify-center text-3xl font-semibold sm:flex-row sm:text-4xl lg:text-5xl">
           合作夥伴
@@ -18,7 +19,7 @@ const Cooperators = () => {
           />
         </div>
       </MaxWidthWrapper>
-    </section>
+    </AnimatedSection>
   );
 };
 

@@ -59,31 +59,22 @@ const Arrangement: FC<ArrangementProps> = ({ className }) => {
         <div className="flex flex-col">
           <span className="text-lg font-semibold">學費</span>
           <span className="text-nowrap">
-            正　　價：HKD <span className="text-nowrap">15,800/人</span>
+            價　　錢：HKD <span className="text-nowrap">15,800/人</span>
           </span>
           <span className="text-sm">
-            * 課程可分期付款，上課前付 $8,800，在上第三堂前把尾數繳付。
+            * 課程可分期付款，上課前付 $7,900，在上第三堂前把尾數繳付。
           </span>
           <span className="text-sm">
-            * 申請可持續進修基金後，可獲政府高達 8
-            成補貼，扣除減免後，實際只需付
-            $3,160。(如曾申請可持續進修基金，請留意可用餘額)。
-          </span>
-          <span className="mt-2 text-red-500">
-            早鳥優惠：HKD <span className="text-nowrap">13,800/人</span>
+            * 此課程可以申請持續進修基金，扣除減免後，最少只需付 $3,160。
           </span>
           <span className="text-sm">
             * 提早兩星期報名，課程可分期付款，上課前付
-            $8,800，在上第三堂前把尾數繳付。
-          </span>
-          <span className="text-sm">
-            * 申請可持續進修基金後，可獲政府高達 8
-            成補貼，扣除減免後，實際只需付 $2760。
+            $7,900，在上第三堂前把尾數繳付。
           </span>
         </div>
       </div>
       <p className="mt-4 text-sm">
-        * 如同學未能依時完成課程，本中心亦設一年免費補課及補考服務
+        * 如同學未能依時完成課程，本中心亦設一年補課及補考服務
       </p>
     </div>
   );

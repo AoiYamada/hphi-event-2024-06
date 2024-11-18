@@ -6,10 +6,11 @@ import Syllabus from "./Syllabus";
 import CardBg from "./CardBg";
 import Image from "next/image";
 import Arrangement from "./Arrangement";
+import AnimatedSection from "@/components/AnimatedSection";
 
 const CourseInfo = () => {
   return (
-    <section id="course-info" className="w-full">
+    <AnimatedSection id="course-info" className="w-full">
       <MaxWidthWrapper className="flex flex-col items-center justify-center text-neutral">
         <div className="flex flex-col items-center justify-center gap-12 rounded-lg border border-neutral/10 bg-basic/50 px-4 pb-16 pt-12 shadow-md md:px-12">
           <h1 className="flex flex-col items-center justify-center text-3xl font-semibold sm:flex-row sm:text-4xl lg:text-5xl">
@@ -43,7 +44,7 @@ const CourseInfo = () => {
           </div>
         </div>
       </MaxWidthWrapper>
-    </section>
+    </AnimatedSection>
   );
 };
 

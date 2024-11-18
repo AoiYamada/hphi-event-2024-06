@@ -4,6 +4,7 @@ import { FC } from "react";
 import KnowMoreCourseInfo from "../KnowMoreCourseInfo";
 import Closed from "../Closed";
 import Link from "next/link";
+import AnimatedSection from "../AnimatedSection";
 
 const slots: ClassCardProps[] = [
   {
@@ -24,7 +25,7 @@ const slots: ClassCardProps[] = [
 
 const TimeSlot = () => {
   return (
-    <section className="w-full" id="time-slot">
+    <AnimatedSection className="w-full" id="time-slot">
       <MaxWidthWrapper className="relative flex flex-col items-center justify-center gap-12 text-neutral">
         <h1 className="flex flex-col items-center justify-center text-3xl font-semibold sm:flex-row sm:text-4xl lg:text-5xl">
           開課時間
@@ -65,7 +66,7 @@ const TimeSlot = () => {
           </p>
         </div>
       </MaxWidthWrapper>
-    </section>
+    </AnimatedSection>
   );
 };
 

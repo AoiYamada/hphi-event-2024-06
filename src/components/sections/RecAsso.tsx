@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import Image from "next/image";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import AnimatedSection from "../AnimatedSection";
 
 const associations: AssoProps[] = [
   {
@@ -43,7 +44,7 @@ const associations: AssoProps[] = [
 
 const RecAsso = () => {
   return (
-    <section className="w-full py-4">
+    <AnimatedSection className="w-full py-4">
       <MaxWidthWrapper className="flex flex-col justify-between gap-12 py-4 text-neutral">
         <h1 className="flex flex-col items-center justify-center text-3xl font-semibold sm:flex-row sm:text-4xl lg:text-5xl">
           認可學會
@@ -54,7 +55,7 @@ const RecAsso = () => {
           ))}
         </div>
       </MaxWidthWrapper>
-    </section>
+    </AnimatedSection>
   );
 };
 

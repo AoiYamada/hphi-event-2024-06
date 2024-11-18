@@ -1,9 +1,10 @@
+import AnimatedSection from "@/components/AnimatedSection";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import React from "react";
 
 const Interviews = () => {
   return (
-    <section id="interviews" className="block w-full">
+    <AnimatedSection id="interviews" className="block w-full">
       <MaxWidthWrapper className="flex flex-col items-center justify-center gap-12">
         <h1 className="flex flex-col items-center justify-center text-3xl font-semibold sm:text-4xl lg:text-5xl">
           <span>其他訪問：</span>
@@ -38,7 +39,7 @@ const Interviews = () => {
           ></iframe>
         </div>
       </MaxWidthWrapper>
-    </section>
+    </AnimatedSection>
   );
 };
 

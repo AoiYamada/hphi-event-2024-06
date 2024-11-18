@@ -6,10 +6,11 @@ import Syllabus from "./Syllabus";
 import Image from "next/image";
 import Arrangement from "./Arrangement";
 import CardBg from "@/components/sections/CourseInfo/CardBg";
+import AnimatedSection from "@/components/AnimatedSection";
 
 const CourseInfo = () => {
   return (
-    <section id="course-info" className="w-full">
+    <AnimatedSection id="course-info" className="w-full">
       <MaxWidthWrapper className="flex flex-col items-center justify-center text-neutral">
         <div className="flex flex-col items-center justify-center gap-12 rounded-lg border border-neutral/10 bg-basic/50 px-4 pb-16 pt-12 shadow-md md:px-12">
           <div className="flex flex-col gap-2">
@@ -149,29 +150,26 @@ const CourseInfo = () => {
               <div className="flex flex-col gap-2">
                 <div className="flex flex-col">
                   <p>
-                    1. 英國IBNLP學會Specific in Interpersonal Communication and
-                    Business Management Skills資格(一年會費為港幣2500元)
+                    1. 英國 IBNLP 學會 Specific in Interpersonal Communication
+                    and Business Management Skills 資格(永久會藉費)
                   </p>
-                  <p>2. HPHI文憑QF Level 3認證證書 (價值$800)</p>
+                  <p>2. HPHI 文憑 QF Level 3 認證證書</p>
                   <p>
-                    3. HKNLP NFNLP Basic Practitioner
-                    認證證書(價值$800，證書由心理學家簽發)
+                    3. HKPHP x HKNLP Basic Practitioner
+                    認證證書(證書由心理學家簽發)
                   </p>
                 </div>
                 <div className="text-sm">
                   <p>
-                    * 其他同類課程，證書需逐張繳費，此課程所有證書已計算在內。
+                    * 學員畢業後，亦可銜接到 ABH, NGH, PBH, IMDHA, University of
+                    Clinical Health Science 等多個不同學會的認證，此外亦可進修至
+                    NLP Master Practitioner 及 NLP 導師。
                   </p>
                   <p>
-                    * 學員畢業後，亦可銜接到ABH,NGH,PBH,IMDHA,University of
-                    Clinical Health
-                    Science等多個不同學會的認證，此外亦可進修至NLP Master
-                    Practitioner及NLP導師。
+                    * 此外，合資格同學亦可另外申請免試申請美國 NFNLP
+                    學會資格，費用需另付，費用為港幣 $1600，視乎匯率而訂。
                   </p>
-                  <p>
-                    *
-                    此外，合資格同學亦可另外申請免試申請美國NFNLP學會資格，費用需另付，費用為港幣$1600，視乎匯率而訂。
-                  </p>
+                  <p>* 課程由導師親自撰寫，超過600頁的書籍及筆記。</p>
                 </div>
               </div>
             </div>
@@ -237,7 +235,7 @@ const CourseInfo = () => {
           </div>
         </div>
       </MaxWidthWrapper>
-    </section>
+    </AnimatedSection>
   );
 };
 

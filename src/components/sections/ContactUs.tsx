@@ -2,10 +2,11 @@ import React from "react";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import ContactForm from "../ContactForm";
 import Sharing from "../Sharing";
+import AnimatedSection from "../AnimatedSection";
 
 const ContactUs = () => {
   return (
-    <section className="w-full" id="contact-us">
+    <AnimatedSection className="w-full" id="contact-us">
       <MaxWidthWrapper className="flex flex-col items-center justify-center gap-12">
         <h1 className="flex flex-col items-center justify-center text-3xl font-semibold sm:flex-row sm:text-4xl lg:text-5xl">
           聯絡我們
@@ -15,7 +16,7 @@ const ContactUs = () => {
           <ContactForm className="w-full max-w-lg" />
         </div>
       </MaxWidthWrapper>
-    </section>
+    </AnimatedSection>
   );
 };
 

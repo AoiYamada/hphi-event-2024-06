@@ -1,9 +1,10 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import React from "react";
+import AnimatedSection from "./AnimatedSection";
 
 const HypnosisIntroVideo = () => {
   return (
-    <section id="hypnosis_intro_video" className="block w-full">
+    <AnimatedSection id="hypnosis_intro_video" className="block w-full">
       <MaxWidthWrapper className="flex flex-col items-center justify-center gap-12">
         <div className="flex flex-col items-center justify-center gap-12">
           <iframe
@@ -30,7 +31,7 @@ const HypnosisIntroVideo = () => {
           ></iframe>
         </div>
       </MaxWidthWrapper>
-    </section>
+    </AnimatedSection>
   );
 };
 

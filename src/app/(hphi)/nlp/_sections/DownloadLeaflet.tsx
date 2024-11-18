@@ -1,9 +1,10 @@
+import AnimatedSection from "@/components/AnimatedSection";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Link from "next/link";
 
 const DownloadLeaflet = () => {
   return (
-    <section className="w-full" id="download-leaflet">
+    <AnimatedSection className="w-full" id="download-leaflet">
       <MaxWidthWrapper className="flex flex-col items-center gap-12 text-neutral">
         <h1 className="text-3xl font-semibold sm:text-4xl lg:text-5xl">
           下載課程手冊/單張
@@ -21,7 +22,7 @@ const DownloadLeaflet = () => {
           </Link>
         </div>
       </MaxWidthWrapper>
-    </section>
+    </AnimatedSection>
   );
 };
 
