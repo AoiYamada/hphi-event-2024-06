@@ -62,19 +62,16 @@ const Arrangement: FC<ArrangementProps> = ({ className }) => {
             價　　錢：HKD <span className="text-nowrap">15,800/人</span>
           </span>
           <span className="text-sm">
-            * 課程可分期付款，上課前付 $7,900，在上第三堂前把尾數繳付。
+            * 課程可分期付款，上課前付 $7,900，在上第三堂前再繳付尾數 $7900。
           </span>
           <span className="text-sm">
-            * 此課程可以申請持續進修基金，扣除減免後，最少只需付 $3,160。
-          </span>
-          <span className="text-sm">
-            * 提早兩星期報名，課程可分期付款，上課前付
-            $7,900，在上第三堂前把尾數繳付。
+            * 此課程可以申請持續進修基金，扣除減免後，最少只需付 $3,820。
           </span>
         </div>
       </div>
       <p className="mt-4 text-sm">
-        * 如同學未能依時完成課程，本中心亦設一年補課及補考服務
+        *
+        如同學未能依時完成課程，本中心亦設一年補課及補考服務，約兩至三個月開辦一次，補課名額先到先得。
       </p>
     </div>
   );

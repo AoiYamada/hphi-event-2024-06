@@ -155,7 +155,7 @@ const CourseInfo = () => {
                   </p>
                   <p>2. HPHI 文憑 QF Level 3 認證證書</p>
                   <p>
-                    3. HKPHP x HKNLP Basic Practitioner
+                    3. HPHI x HKNLP Basic Practitioner
                     認證證書(證書由心理學家簽發)
                   </p>
                 </div>
@@ -213,7 +213,7 @@ const CourseInfo = () => {
           </div>
           <div className="relative w-full">
             <div className="flex flex-col gap-8">
-              <p>* 課程亦送贈由導師親自撰寫，超過600頁的書籍及筆記。</p>
+              <p>* 課程亦包含由導師親自撰寫，超過600頁的書籍及筆記。</p>
               <div className="flex flex-col gap-12 sm:flex-row">
                 <Image
                   src="/books/nlp-practice.png"
