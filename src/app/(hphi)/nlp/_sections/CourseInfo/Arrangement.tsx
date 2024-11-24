@@ -67,6 +67,14 @@ const Arrangement: FC<ArrangementProps> = ({ className }) => {
           <span className="text-sm">
             * 此課程可以申請持續進修基金，扣除減免後，最少只需付 $3,820。
           </span>
+          <span className="text-sm">
+            * 付款資料 <br />
+            HPHI Education Limited <br />
+            Ac：521-100545-838（滙豐銀行）
+            <br />
+            轉數快：101433324
+          </span>
+          <span className="text-sm">* 付款資料</span>
         </div>
       </div>
       <p className="mt-4 text-sm">

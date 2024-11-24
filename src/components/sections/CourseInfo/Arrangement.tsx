@@ -49,6 +49,13 @@ const Arrangement: FC<ArrangementProps> = ({ className }) => {
           <span className="mt-2 text-sm font-semibold text-primary">
             * 十周年優惠、名額有限、先報先得
           </span>
+          <span className="text-sm">
+            * 付款資料 <br />
+            HPHI Education Limited <br />
+            Ac：521-100545-838（滙豐銀行）
+            <br />
+            轉數快：101433324
+          </span>
         </div>
       </div>
       <p className="mt-4 text-sm">
