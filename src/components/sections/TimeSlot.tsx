@@ -8,6 +8,13 @@ import AnimatedSection from "../AnimatedSection";
 
 const slots: ClassCardProps[] = [
   {
+    title: "2025年2月-2025年3月常規假日班",
+    time: ["星期日", "10:00 - 19:00"],
+    dates: ["2月2日", "2月9日", "2月23日", "3月2日", "3月9日", "3月16日"],
+    tutors: ["Dr. CW Leung (催眠博士、臨床心理學碩士、商業心理學家)"],
+    closed: false,
+  },
+  {
     title: "2024年12月-2025年1月常規假日班",
     time: ["星期六、日", "10:00 - 19:00"],
     dates: [

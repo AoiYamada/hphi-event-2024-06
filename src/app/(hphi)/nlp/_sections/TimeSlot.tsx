@@ -9,6 +9,18 @@ import AnimatedSection from "@/components/AnimatedSection";
 
 const slots: ClassCardProps[] = [
   {
+    title: "假日班",
+    time: ["星期日"],
+    dates: [
+      "2月9日 (10:00-19:00) 9 小時",
+      "2月16日 (11:00-18:00) 7 小時",
+      "2月23日 (11:00-18:00) 7 小時",
+      "3月2日 (10:00-19:30) 9.5 小時",
+    ],
+    tutors: ["Dr. CW Leung (催眠博士、臨床心理學碩士、商業心理學家)"],
+    closed: false,
+  },
+  {
     title: "2025年2月-5月班",
     time: ["星期三", "每課 3 小時", "（第十課 3.5 小時）"],
     dates: [
@@ -196,6 +208,7 @@ const ClassCard: FC<ClassCardProps> = ({
           </div>
         )}
       </div>
+
       {/* <KnowMoreCourseInfo
         href="https://hknlp.info/product/%e8%ba%ab%e5%bf%83%e8%aa%9e%e8%a8%80%e7%a8%8b%e5%bc%8f%e5%ad%b8%e4%ba%ba%e9%9a%9b%e4%ba%a4%e5%be%80%e5%8f%8a%e5%95%86%e6%a5%ad%e7%ae%a1%e7%90%86%e6%8a%80%e5%b7%a7%e8%ad%89%e6%9b%b8/"
         className="mt-8 w-[116px]"
