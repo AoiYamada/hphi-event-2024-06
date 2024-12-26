@@ -70,8 +70,9 @@ const Arrangement: FC<ArrangementProps> = ({ className }) => {
             <Link
               href="/Continuing_Education_Fund_Application_Form_SFO313.pdf"
               target="_blank"
+              className="text-primary underline"
             >
-              按此下載申請持續進修基金申請表格 (PDF)
+              按此下載持續進修基金申請表格 (PDF)
             </Link>
           </span>
           <span className="text-sm">
