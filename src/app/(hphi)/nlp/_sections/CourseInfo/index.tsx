@@ -151,7 +151,7 @@ const CourseInfo = () => {
                 <div className="flex flex-col">
                   <p>
                     1. 英國 IBNLP 學會 Specific in Interpersonal Communication
-                    and Business Management Skills 資格(永久會藉費)
+                    and Business Management Skills 資格(一年會藉費)
                   </p>
                   <p>2. HPHI 文憑 QF Level 3 認證證書</p>
                   <p>

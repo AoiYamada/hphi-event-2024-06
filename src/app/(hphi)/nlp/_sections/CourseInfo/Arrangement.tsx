@@ -6,6 +6,7 @@ import {
   MessagesSquare,
   UsersRound,
 } from "lucide-react";
+import Link from "next/link";
 import { FC } from "react";
 
 type ArrangementProps = {
@@ -65,7 +66,13 @@ const Arrangement: FC<ArrangementProps> = ({ className }) => {
             * 課程可分期付款，上課前付 $7,900，在上第三堂前，再繳付尾數 $7900。
           </span>
           <span className="text-sm">
-            * 此課程可以申請持續進修基金，扣除減免後，最少只需付 $3,820。
+            * 此課程可以申請持續進修基金，扣除減免後，最少只需付 $3,820。{" "}
+            <Link
+              href="/Continuing_Education_Fund_Application_Form_SFO313.pdf"
+              target="_blank"
+            >
+              按此下載申請持續進修基金申請表格 (PDF)
+            </Link>
           </span>
           <span className="text-sm">
             * 付款資料 <br />
