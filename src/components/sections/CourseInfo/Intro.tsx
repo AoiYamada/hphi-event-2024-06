@@ -12,8 +12,9 @@ const Intro: FC<IntroProps> = ({ className }) => {
         <h3 className="text-xl font-bold text-primary lg:text-2xl">簡介</h3>
         <div className="flex flex-col gap-4 text-justify text-lg">
           <p>
-            本中心現正推出 2024
-            秋季班。課程內容豐富，涵蓋催眠基本原理到進階應用技巧，並對應美國 NGH
+            本中心現正推出 2025
+            全新催眠課程。課程內容豐富，涵蓋催眠基本原理到進階應用技巧，並對應美國
+            NGH
             催眠治療課程大綱。無論您是想提升個人技能，還是有志投身輔導行業，我們都能為您提供最專業的培訓。
           </p>
           <p>
