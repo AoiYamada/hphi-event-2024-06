@@ -10,6 +10,8 @@ import TimeSlot from "@/components/sections/TimeSlot";
 import Students from "@/components/sections/Students";
 import Tutors from "@/components/sections/Tutors";
 import HypnosisIntroVideo from "@/components/HypnosisIntroVideo";
+import Cooperators from "@/components/sections/Cooperators";
+import GraduateInterviews from "@/components/sections/GraduateInterviews";
 
 function Home() {
   return (
@@ -22,6 +24,8 @@ function Home() {
         <TimeSlot />
         <Tutors />
         <Students className="lg:hidden" />
+        <GraduateInterviews />
+        <Cooperators />
         <ContactUs />
         <RecAsso />
       </div>

@@ -112,7 +112,7 @@ const CourseInfo = () => {
               <Intro className="lg:w-3/5" />
               <div className="lg:hidden">
                 <video controls>
-                  <source src="/nlp-intro.mp4" type="video/mp4" />
+                  <source src="/videos/nlp-intro.mp4" type="video/mp4" />
                 </video>
               </div>
               <div className="flex w-full flex-col gap-12 md:flex-row lg:w-2/5 lg:shrink-0 lg:flex-col">
@@ -124,7 +124,7 @@ const CourseInfo = () => {
           </div>
           <div className="relative hidden w-full lg:block">
             <video controls>
-              <source src="/nlp-intro.mp4" type="video/mp4" />
+              <source src="/videos/nlp-intro.mp4" type="video/mp4" />
             </video>
           </div>
           <div className="relative w-full">

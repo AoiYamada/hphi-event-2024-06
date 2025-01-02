@@ -10,6 +10,7 @@ import DownloadLeaflet from "./_sections/DownloadLeaflet";
 import ContactUs from "./_sections/ContactUs";
 import Consultants from "@/components/sections/Consultants";
 import Interviews from "./_sections/Interviews";
+import GraduateInterviews from "@/components/sections/GraduateInterviews";
 
 const Page = () => {
   return (
@@ -22,6 +23,7 @@ const Page = () => {
       <Tutors />
       <Consultants />
       <Students className="lg:hidden" />
+      <GraduateInterviews />
       <Cooperators />
       <ContactUs />
       <RecAsso />
