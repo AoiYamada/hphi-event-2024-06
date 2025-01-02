@@ -28,7 +28,9 @@ const VideoCard: React.FC<{ src: string; name: string }> = ({ src, name }) => (
 const GraduateInterviews: React.FC = () => (
   <AnimatedSection className="w-full" id="graduate-interviews">
     <MaxWidthWrapper className="flex flex-col items-center justify-center gap-12">
-      <h1 className="text-center text-3xl font-semibold">畢業生訪談</h1>
+      <h1 className="flex flex-col items-center justify-center text-3xl font-semibold sm:flex-row sm:text-4xl lg:text-5xl">
+        畢業生訪談
+      </h1>
       <div className="grid grid-cols-4 gap-x-16 gap-y-8 lg:grid-cols-12">
         {videos.map((video, index) => (
           <VideoCard key={index} src={video.src} name={video.name} />
