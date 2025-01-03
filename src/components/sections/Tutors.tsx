@@ -21,7 +21,7 @@ const tutors: TutorCardProps[] = [
       "專業心理治療及催眠應用（香港）中心 & 身心語言程式學術中心首席催眠教授",
       "專業心理治療及催眠應用(香港)中心 & 身心語言程式學術中心創辦人之一",
       "香港城市大學哲學博士 (主研中國催眠醫學史)",
-      "正攻讀英國臨床心理學碩士",
+      "英國臨床心理學碩士",
       "香港大學法律碩士(仲裁及調解)︰註冊調解員(The Accord Group)",
       "香港大學行為健康碩士 (畢業研究論文針對應屆考生的催眠治療應用)",
       "香港城市大學文學專業教育碩士 ",
@@ -59,7 +59,7 @@ const tutors: TutorCardProps[] = [
   },
   {
     name: "Valient Leung",
-    title: "首席導師",
+    title: "創辦人/校長",
     img: {
       src: "/tutors/valient-leung.webp",
       width: 330,
