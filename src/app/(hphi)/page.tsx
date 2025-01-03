@@ -21,10 +21,10 @@ function Home() {
         <Hero />
         <CourseInfo />
         <HypnosisIntroVideo />
+        <GraduateInterviews />
         <TimeSlot />
         <Tutors />
         <Students className="lg:hidden" />
-        <GraduateInterviews />
         <Cooperators />
         <ContactUs />
         <RecAsso />

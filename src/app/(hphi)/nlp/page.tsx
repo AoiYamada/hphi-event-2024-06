@@ -18,12 +18,12 @@ const Page = () => {
       <Hero />
       <CourseInfo />
       <Interviews />
+      <GraduateInterviews />
       <TimeSlot />
       <DownloadLeaflet />
       <Tutors />
       <Consultants />
       <Students className="lg:hidden" />
-      <GraduateInterviews />
       <Cooperators />
       <ContactUs />
       <RecAsso />
