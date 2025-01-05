@@ -7,8 +7,8 @@ const videos = [
   { src: "/videos/Camille.mp4", name: "畢業生 Camille" },
   { src: "/videos/Francis.mp4", name: "畢業生 Francis" },
   { src: "/videos/Joan.mp4", name: "畢業生 Joan" },
+  { src: "/videos/Mandy.mp4", name: "畢業生 Mandy" },
   { src: "/videos/Suki.mp4", name: "畢業生 Suki" },
-  // { src: "/videos/Mandy.mp4", name: "畢業生 Mandy" },
 ];
 
 const VideoCard: React.FC<{ src: string; name: string }> = ({ src, name }) => (
