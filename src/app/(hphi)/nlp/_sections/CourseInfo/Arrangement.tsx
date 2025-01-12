@@ -86,6 +86,10 @@ const Arrangement: FC<ArrangementProps> = ({ className }) => {
         </div>
       </div>
       <p className="mt-4 text-sm">
+        上課地點：中環租庇利街 17～19 號順聯大廈701室
+        (恆生銀行總行旁，中環地鐵站 A 出口，步行約 5 分鐘)
+      </p>
+      <p className="mt-4 text-sm">
         *
         如同學未能依時完成課程，本中心亦設一年補課及補考服務，約兩至三個月開辦一次，補課名額先到先得。
       </p>
